@@ -1,0 +1,3 @@
+*.sqlite binary
+*.sqlite-shm binary
+*.sqlite-wal binary

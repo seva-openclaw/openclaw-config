@@ -1,0 +1,21 @@
+# Runtime data — do not backup
+agents/
+logs/
+media/
+canvas/
+delivery-queue/
+*.bak
+*.bak.*
+*.clobbered*
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Credentials (push separately if needed)
+credentials/
+
+# SQLite databases with secrets
+memory/*.sqlite
+tasks/runs.sqlite*
+flows/registry.sqlite*

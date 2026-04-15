@@ -1,0 +1,5 @@
+{
+  "name": "email-classifier",
+  "version": "1.0.0",
+  "description": "AI-powered email classification agent using Claude + Gmail + Supabase"
+}

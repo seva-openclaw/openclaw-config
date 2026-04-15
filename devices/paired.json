@@ -1,0 +1,149 @@
+{
+  "194b4243a7b5b43cf6ad06b429bbca8ddbfe5b3877cd0ee8592898bb868bec5e": {
+    "deviceId": "194b4243a7b5b43cf6ad06b429bbca8ddbfe5b3877cd0ee8592898bb868bec5e",
+    "publicKey": "U98LzvqhLyn5hMSq4JEaq_2RMAHeXxWrSbpaj-7VOoA",
+    "platform": "linux",
+    "clientId": "openclaw-probe",
+    "clientMode": "probe",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "ada1c56b4d5b4e1699f1f4efaf82a30b",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1775834151228
+      }
+    },
+    "createdAtMs": 1775834151228,
+    "approvedAtMs": 1775834151228
+  },
+  "63cf95962bdcba285604d52661d8ba35dc50e048e3662c6c58ac3a9df57dfb83": {
+    "deviceId": "63cf95962bdcba285604d52661d8ba35dc50e048e3662c6c58ac3a9df57dfb83",
+    "publicKey": "MuzyyJmHr7PRYKiA_1znDqoKJL5FWU7m4MfBBsQU4JE",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.read",
+      "operator.write",
+      "operator.talk.secrets"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "8d8280b0333f4f3d8dd1cefa26ba7586",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1775835981797
+      }
+    },
+    "createdAtMs": 1775835981797,
+    "approvedAtMs": 1775835981797,
+    "displayName": "gateway:agent"
+  },
+  "c3802018476b1dde14994f9506cd9876b9541b02c39c1f38a83f75ddf1952179": {
+    "deviceId": "c3802018476b1dde14994f9506cd9876b9541b02c39c1f38a83f75ddf1952179",
+    "publicKey": "l8lXqFi70ASrZB6lMsi2z400dxbk44mGAOB1oPLa_vk",
+    "platform": "Win32",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "gnZcS-8yXvzFdLwjyi3n_Bb3MxDawP7m94BB_0J39g4",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1775837736129,
+        "lastUsedAtMs": 1776271559315
+      }
+    },
+    "createdAtMs": 1775837736129,
+    "approvedAtMs": 1775837736129
+  },
+  "25eecd9d348233f44d448442e4c49c522cd70b61796fb3fb85889d3b67a6bbfe": {
+    "deviceId": "25eecd9d348233f44d448442e4c49c522cd70b61796fb3fb85889d3b67a6bbfe",
+    "publicKey": "DTynfxS6TDofFjaASdQpWbJSuqMYwZvQsBumR85oD38",
+    "platform": "Linux armv81",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "K4D0OKQYBMykAcaYI6Fi05btXFABrhlto1FD4ECGDaQ",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1776219039947
+      }
+    },
+    "createdAtMs": 1776219039947,
+    "approvedAtMs": 1776219039947
+  }
+}
