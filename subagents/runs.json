@@ -1,111 +1,6 @@
 {
   "version": 2,
   "runs": {
-    "f610b9f9-21b7-45f3-b56f-574fe71c2712": {
-      "runId": "f610b9f9-21b7-45f3-b56f-574fe71c2712",
-      "childSessionKey": "agent:inbox-guardian:subagent:fc6fd8bf-f4a2-4e04-960e-ee30fee5af61",
-      "controllerSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterOrigin": {
-        "channel": "discord",
-        "to": "channel:1493723125353938955",
-        "accountId": "default"
-      },
-      "requesterDisplayKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "task": "Read emails from /data/workspace-inbox-guardian/state/wave3-emails.json. Each entry has {originalIndex, email, domain}. Classify entries 0-9 (originalIndex 200-209). Labels: Security(keep), Financial(keep), Personal(keep), Work(keep), Transactional(archive), Newsletter(archive), Notification(archive), Advertisement(delete), Spam(delete). Reply ONLY with valid JSON array using originalIndex values (no markdown, no text): [{\"originalIndex\":200,\"label\":\"...\",\"confidence\":0.0,\"reasoning\":\"...\"},...]",
-      "cleanup": "keep",
-      "expectsCompletionMessage": true,
-      "spawnMode": "run",
-      "model": "minimax-portal/MiniMax-M2.7-highspeed",
-      "workspaceDir": "/data/workspace-inbox-guardian",
-      "runTimeoutSeconds": 90,
-      "createdAt": 1776297412555,
-      "startedAt": 1776297414702,
-      "sessionStartedAt": 1776297412555,
-      "accumulatedRuntimeMs": 0,
-      "cleanupHandled": true,
-      "completionAnnouncedAt": 1776297546300,
-      "retainAttachmentsOnKeep": false,
-      "endedAt": 1776297440130,
-      "outcome": {
-        "status": "ok"
-      },
-      "endedReason": "subagent-complete",
-      "frozenResultText": "[{\"originalIndex\":200,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Pinterest personalized recommendation email about Vinyl Records. Promotional content in CATEGORY_PROMOTIONS.\"},{\"originalIndex\":201,\"label\":\"Newsletter\",\"confidence\":0.8,\"reasoning\":\"Apify platform update/newsletter about Actor templates and web scraping features. Educational content from a developer tool.\"},{\"originalIndex\":202,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Kaggle platform announcement about Game Arena AI events. CATEGORY_UPDATES, platform news about LLM/AI competitions.\"},{\"originalIndex\":203,\"label\":\"Advertisement\",\"confidence\":0.75,\"reasoning\":\"Elastic promotional email marketing virtual workshops and webinars. Direct promotional event registration campaign.\"},{\"originalIndex\":204,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Pinterest personalized recommendation email about Vinyl Records for user. Promotional but personalized content.\"},{\"originalIndex\":205,\"label\":\"Newsletter\",\"confidence\":0.8,\"reasoning\":\"Growth Factory tech newsletter in Ukrainian covering European/Ukrainian VC and tech market analysis. CATEGORY_UPDATES.\"},{\"originalIndex\":206,\"label\":\"Newsletter\",\"confidence\":0.8,\"reasoning\":\"Growth Factory newsletter covering indie maker case studies and startup/product launches. CATEGORY_UPDATES.\"},{\"originalIndex\":207,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Pinterest personalized recommendation email about Storage and Organization. Promotional content in CATEGORY_PROMOTIONS.\"},{\"originalIndex\":208,\"label\":\"Advertisement\",\"confidence\":0.9,\"reasoning\":\"AI Automation Society promotional urgency email with countdown timer marketing Plus membership. Clear sales/advertisement pitch.\"},{\"originalIndex\":209,\"label\":\"Newsletter\",\"confidence\":0.8,\"reasoning\":\"Apify platform update about controlling Actors via API. Technical feature announcement and documentation update.\"}]",
-      "frozenResultCapturedAt": 1776297444164,
-      "endedHookEmittedAt": 1776297546544,
-      "cleanupCompletedAt": 1776297546944
-    },
-    "6fee94ae-cd61-47bb-88f5-3aa8e5755a8b": {
-      "runId": "6fee94ae-cd61-47bb-88f5-3aa8e5755a8b",
-      "childSessionKey": "agent:inbox-guardian:subagent:32afbdb1-139a-43df-868b-9ba29b8e30a5",
-      "controllerSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterOrigin": {
-        "channel": "discord",
-        "to": "channel:1493723125353938955",
-        "accountId": "default"
-      },
-      "requesterDisplayKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "task": "Read emails from /data/workspace-inbox-guardian/state/wave3-emails.json. Each entry has {originalIndex, email, domain}. Classify entries 10-19 (originalIndex 210-219). Labels: Security(keep), Financial(keep), Personal(keep), Work(keep), Transactional(archive), Newsletter(archive), Notification(archive), Advertisement(delete), Spam(delete). Reply ONLY with valid JSON array using originalIndex values (no markdown, no text): [{\"originalIndex\":210,\"label\":\"...\",\"confidence\":0.0,\"reasoning\":\"...\"},...]",
-      "cleanup": "keep",
-      "expectsCompletionMessage": true,
-      "spawnMode": "run",
-      "model": "minimax-portal/MiniMax-M2.7-highspeed",
-      "workspaceDir": "/data/workspace-inbox-guardian",
-      "runTimeoutSeconds": 90,
-      "createdAt": 1776297427255,
-      "startedAt": 1776297430923,
-      "sessionStartedAt": 1776297427255,
-      "accumulatedRuntimeMs": 0,
-      "cleanupHandled": true,
-      "completionAnnouncedAt": 1776297554186,
-      "retainAttachmentsOnKeep": false,
-      "endedAt": 1776297449974,
-      "outcome": {
-        "status": "ok"
-      },
-      "endedReason": "subagent-complete",
-      "frozenResultText": "[{\"originalIndex\":210,\"label\":\"Advertisement\",\"confidence\":0.96,\"reasoning\":\"AI Automation Society urgent sales email with countdown timers, price increase pressure. Classic promotional marketing.\"},{\"originalIndex\":211,\"label\":\"Advertisement\",\"confidence\":0.95,\"reasoning\":\"Pinterest product recommendations with affiliate-style links and CATEGORY_PROMOTIONS label.\"},{\"originalIndex\":212,\"label\":\"Advertisement\",\"confidence\":0.96,\"reasoning\":\"AI Automation Society midnight deadline urgency email. Repeated promotional pressure from same sender.\"},{\"originalIndex\":213,\"label\":\"Advertisement\",\"confidence\":0.96,\"reasoning\":\"AI Automation Society 6-hour countdown email. Same sender as 210 and 212, same pattern of urgency sales tactics.\"},{\"originalIndex\":214,\"label\":\"Advertisement\",\"confidence\":0.95,\"reasoning\":\"Pinterest product recommendations with CATEGORY_PROMOTIONS label and autologin links.\"},{\"originalIndex\":215,\"label\":\"Newsletter\",\"confidence\":0.78,\"reasoning\":\"Growth Factory event video in Ukrainian about bootstrapping. Platform/event announcement with educational content. CATEGORY_UPDATES label.\"},{\"originalIndex\":216,\"label\":\"Notification\",\"confidence\":0.88,\"reasoning\":\"Kaggle platform update about new Game Arena features. Account-relevant platform announcement, not promotional.\"},{\"originalIndex\":217,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Apify product updates newsletter covering challenge winners, new features, and platform news. Regular digest.\"},{\"originalIndex\":218,\"label\":\"Newsletter\",\"confidence\":0.82,\"reasoning\":\"Elastic engineering blog digest about jina-embeddings-v3 on their inference service. Technical newsletter content.\"},{\"originalIndex\":219,\"label\":\"Advertisement\",\"confidence\":0.95,\"reasoning\":\"Pinterest product recommendations for CD holders with CATEGORY_PROMOTIONS label.\"}]",
-      "frozenResultCapturedAt": 1776297451800,
-      "endedHookEmittedAt": 1776297554579,
-      "cleanupCompletedAt": 1776297555124
-    },
-    "7e2e94a5-bf15-4f8d-8096-435d94a07084": {
-      "runId": "7e2e94a5-bf15-4f8d-8096-435d94a07084",
-      "childSessionKey": "agent:inbox-guardian:subagent:51333f53-e1bd-41a1-adef-d10442ed4106",
-      "controllerSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterOrigin": {
-        "channel": "discord",
-        "to": "channel:1493723125353938955",
-        "accountId": "default"
-      },
-      "requesterDisplayKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "task": "Read emails from /data/workspace-inbox-guardian/state/wave3-emails.json. Each entry has {originalIndex, email, domain}. Classify entries 20-29 (originalIndex 220-229). Labels: Security(keep), Financial(keep), Personal(keep), Work(keep), Transactional(archive), Newsletter(archive), Notification(archive), Advertisement(delete), Spam(delete). Reply ONLY with valid JSON array using originalIndex values (no markdown, no text): [{\"originalIndex\":220,\"label\":\"...\",\"confidence\":0.0,\"reasoning\":\"...\"},...]",
-      "cleanup": "keep",
-      "expectsCompletionMessage": true,
-      "spawnMode": "run",
-      "model": "minimax-portal/MiniMax-M2.7-highspeed",
-      "workspaceDir": "/data/workspace-inbox-guardian",
-      "runTimeoutSeconds": 90,
-      "createdAt": 1776297436670,
-      "startedAt": 1776297441571,
-      "sessionStartedAt": 1776297436670,
-      "accumulatedRuntimeMs": 0,
-      "cleanupHandled": true,
-      "completionAnnouncedAt": 1776297565587,
-      "retainAttachmentsOnKeep": false,
-      "endedAt": 1776297460867,
-      "outcome": {
-        "status": "ok"
-      },
-      "endedReason": "subagent-complete",
-      "frozenResultText": "[{\"originalIndex\":220,\"label\":\"Newsletter\",\"confidence\":0.92,\"reasoning\":\"AI Automation Society newsletter via beehiiv platform - educational promotional content about paid vs free automation groups. Newsletter format with clear marketing angle.\"},{\"originalIndex\":221,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Growth Factory IT education newsletter in Ukrainian - PDF material, Telegram channel promotion. Educational promotional content.\"},{\"originalIndex\":222,\"label\":\"Newsletter\",\"confidence\":0.88,\"reasoning\":\"Apify product update/newsletter about integrations with automation platforms. Educational content about platform features.\"},{\"originalIndex\":223,\"label\":\"Advertisement\",\"confidence\":0.95,\"reasoning\":\"Canva Create event promotion with discount urgency. Clear promotional/advertisement content for Canva event.\"},{\"originalIndex\":224,\"label\":\"Notification\",\"confidence\":0.82,\"reasoning\":\"Elastic{ON} event agenda announcement. Professional event notification, not personal or financial.\"},{\"originalIndex\":225,\"label\":\"Advertisement\",\"confidence\":0.96,\"reasoning\":\"Urgency-based promotional email from Uppitai/AI Automation Society - price increasing Saturday, explicit CTA to lock in rate. Direct advertisement.\"},{\"originalIndex\":226,\"label\":\"Advertisement\",\"confidence\":0.93,\"reasoning\":\"Pinterest product recommendation email - generic product recommendations based on user activity. Promotional content.\"},{\"originalIndex\":227,\"label\":\"Newsletter\",\"confidence\":0.90,\"reasoning\":\"Uppitai Newsletter via beehiiv - case study format about automation business, n8n sponsor content. Newsletter style.\"},{\"originalIndex\":228,\"label\":\"Advertisement\",\"confidence\":0.94,\"reasoning\":\"Canva template promotion - 'A template could save you hours'. Direct promotional/advertisement content.\"},{\"originalIndex\":229,\"label\":\"Transactional\",\"confidence\":0.91,\"reasoning\":\"Apify welcome/onboarding email - new user onboarding sequence. Transactional nature (account setup/education).\"}]",
-      "frozenResultCapturedAt": 1776297463094,
-      "endedHookEmittedAt": 1776297565894,
-      "cleanupCompletedAt": 1776297566279
-    },
     "885e89bf-ce40-4681-87cb-80f44ee51a2d": {
       "runId": "885e89bf-ce40-4681-87cb-80f44ee51a2d",
       "childSessionKey": "agent:inbox-guardian:subagent:26e8d935-0ad6-4dec-8665-c6b591213ad1",
@@ -129,6 +24,7 @@
       "sessionStartedAt": 1776297452547,
       "accumulatedRuntimeMs": 0,
       "cleanupHandled": true,
+      "completionAnnouncedAt": 1776297751608,
       "retainAttachmentsOnKeep": false,
       "endedAt": 1776297490146,
       "outcome": {
@@ -136,7 +32,9 @@
       },
       "endedReason": "subagent-complete",
       "frozenResultText": "[{\"originalIndex\":230,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Khan Academy educational newsletter about National Civics Bee for middle school students. Educational content, not personal or transactional.\"},{\"originalIndex\":231,\"label\":\"Advertisement\",\"confidence\":0.9,\"reasoning\":\"Canva promotional email offering 20% off Valentine's Day prints. Pure marketing/promotional content.\"},{\"originalIndex\":232,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"AI Automation Society newsletter checking if content is still useful. Legitimate newsletter content about AI automation.\"},{\"originalIndex\":233,\"label\":\"Advertisement\",\"confidence\":0.8,\"reasoning\":\"Pinterest personalized recommendations for record storage ideas. Promotional content driven by browsing history/recommendations algorithm.\"},{\"originalIndex\":234,\"label\":\"Advertisement\",\"confidence\":0.8,\"reasoning\":\"Pinterest personalized vinyl record storage recommendations. Same pattern as 233 — algorithmic recommendations, promotional.\"},{\"originalIndex\":235,\"label\":\"Newsletter\",\"confidence\":0.8,\"reasoning\":\"Khan Academy donation appeal/newsletter thanking supporters. Fundraising newsletter from a known educational nonprofit.\"},{\"originalIndex\":236,\"label\":\"Advertisement\",\"confidence\":0.8,\"reasoning\":\"Pinterest bedroom style recommendations. Personalized home decor suggestions, algorithmic promotional content.\"},{\"originalIndex\":237,\"label\":\"Notification\",\"confidence\":0.92,\"reasoning\":\"Google Play privacy settings update — legitimate Google account/service notification about policy changes. Addressed to user by name.\"}]",
-      "frozenResultCapturedAt": 1776297493200
+      "frozenResultCapturedAt": 1776297493200,
+      "endedHookEmittedAt": 1776297751618,
+      "cleanupCompletedAt": 1776297751621
     }
   }
 }
