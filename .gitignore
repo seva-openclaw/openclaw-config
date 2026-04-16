@@ -19,3 +19,4 @@ credentials/
 memory/*.sqlite
 tasks/runs.sqlite*
 flows/registry.sqlite*
+openclaw.json
