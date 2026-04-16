@@ -35,39 +35,6 @@
       }
     },
     {
-      "id": "email-daily-001",
-      "name": "Inbox Guardian Daily",
-      "enabled": true,
-      "createdAtMs": 1744592100000,
-      "updatedAtMs": 1776337442219,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 7 * * 1-5",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run the Inbox Guardian email agent. Use the inbox-guardian skill: read /data/.openclaw/skills/inbox-guardian/SKILL.md\n\nIMPORTANT: Use full path for gog: /data/npm-global/bin/gog\n\nExecute a scan for provider \"suzzy\":\n1. Run: export PATH=\"/data/npm-global/bin:$PATH\" && GOG_KEYRING_PASSWORD=gogsecrets123 /data/npm-global/bin/gog --account suzy gmail search 'is:unread newer_than:1d' --max 20 -j --results-only\n2. For each email: check domain_rules via /data/.openclaw/skills/inbox-guardian/scripts/check_domain.js\n3. For new domains: classify using your own judgment, apply action via apply_label.js script\n4. Queue uncertain items via insert_pending.js script\n5. Save learned rules via upsert_rule.js script\n\nPost a summary of all actions taken to #email-labler (channel ID: 1493723125353938955) using the message tool with action=send, channel=discord, target=1493723125353938955.\n\nReply with DONE when complete."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "channel:1493723125353938955"
-      },
-      "state": {
-        "nextRunAtMs": 1776423600000,
-        "lastRunAtMs": 1776337200018,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 242201,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "3eddbd4d-2b74-401f-988c-4672614c5413",
       "name": "Morning Brief",
       "enabled": true,
@@ -123,39 +90,6 @@
       }
     },
     {
-      "id": "3e8294d2-36a9-43f2-9348-a999727f89b5",
-      "name": "Inbox Guardian Pulse",
-      "enabled": true,
-      "createdAtMs": 1776225164913,
-      "updatedAtMs": 1776340800009,
-      "schedule": {
-        "kind": "cron",
-        "expr": "*/5 * * * *",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "main",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run: SKIP_MINIMAX=true node /data/workspace-inbox-guardian/main.js scan 200. Report summary."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "channel:1493723125353938955"
-      },
-      "state": {
-        "nextRunAtMs": 1776341100000,
-        "lastRunAtMs": 1776340800005,
-        "lastRunStatus": "skipped",
-        "lastStatus": "skipped",
-        "lastDurationMs": 4,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 0,
-        "lastError": "main job requires payload.kind=\"systemEvent\""
-      }
-    },
-    {
       "id": "openclaw-git-sync",
       "name": "OpenClaw Config Git Sync",
       "schedule": {
@@ -167,14 +101,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1776340826976,
-        "lastRunAtMs": 1776319226985,
+        "nextRunAtMs": 1776362426976,
+        "lastRunAtMs": 1776340826986,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29530,
+        "lastDurationMs": 15676,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776340826981
+        "runningAtMs": 1776362426979
       },
       "wakeMode": "now",
       "payload": {
@@ -182,42 +116,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1776319256515
-    },
-    {
-      "id": "80e7398d-8072-4d80-9b59-ac3f8cad146c",
-      "agentId": "inbox-guardian",
-      "name": "Inbox Guardian Pulse",
-      "description": "Scan inbox every 5 min",
-      "enabled": true,
-      "createdAtMs": 1776283199227,
-      "updatedAtMs": 1776340800010,
-      "schedule": {
-        "kind": "cron",
-        "expr": "*/5 * * * *",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "main",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Run: SKIP_MINIMAX=true node /data/workspace-inbox-guardian/main.js scan 200. Report summary."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "channel:1493723125353938955"
-      },
-      "state": {
-        "nextRunAtMs": 1776341100000,
-        "lastRunAtMs": 1776340800009,
-        "lastRunStatus": "skipped",
-        "lastStatus": "skipped",
-        "lastDurationMs": 1,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 0,
-        "lastError": "main job requires payload.kind=\"systemEvent\""
-      }
+      "updatedAtMs": 1776340842662
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -285,6 +184,39 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "0f8966e6-1465-483d-9254-8dc9c1f5093a",
+      "name": "Inbox Guardian Pulse",
+      "enabled": true,
+      "createdAtMs": 1776339600000,
+      "updatedAtMs": 1776362400021,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/15 * * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "SKIP_MINIMAX=true node /data/workspace-inbox-guardian/main.js scan 200"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "channel:1493723125353938955"
+      },
+      "state": {
+        "nextRunAtMs": 1776363300000,
+        "lastRunAtMs": 1776362400012,
+        "lastRunStatus": "skipped",
+        "lastStatus": "skipped",
+        "lastDurationMs": 9,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 0,
+        "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     }
   ]
