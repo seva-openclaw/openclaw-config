@@ -6,7 +6,7 @@
       "name": "Morning Brief",
       "enabled": true,
       "createdAtMs": 1776110036931,
-      "updatedAtMs": 1776249227248,
+      "updatedAtMs": 1776335628752,
       "schedule": {
         "kind": "cron",
         "expr": "30 6 * * 1-5",
@@ -24,11 +24,11 @@
         "to": "channel:1492710532082565120"
       },
       "state": {
-        "nextRunAtMs": 1776335400000,
-        "lastRunAtMs": 1776249000013,
+        "nextRunAtMs": 1776421800000,
+        "lastRunAtMs": 1776335400012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 227235,
+        "lastDurationMs": 228740,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -39,7 +39,7 @@
       "name": "Inbox Guardian Daily",
       "enabled": true,
       "createdAtMs": 1744592100000,
-      "updatedAtMs": 1776251559093,
+      "updatedAtMs": 1776337442219,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * 1-5",
@@ -57,11 +57,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776337200000,
-        "lastRunAtMs": 1776250800018,
+        "nextRunAtMs": 1776423600000,
+        "lastRunAtMs": 1776337200018,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 759075,
+        "lastDurationMs": 242201,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -99,7 +99,7 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1776293169840,
+      "updatedAtMs": 1776323400201,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -111,15 +111,15 @@
         "text": "__openclaw_memory_core_short_term_promotion_dream__"
       },
       "state": {
-        "nextRunAtMs": 1776322800000,
-        "lastRunAtMs": 1776292568506,
+        "nextRunAtMs": 1776409200000,
+        "lastRunAtMs": 1776322800020,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 601334,
+        "lastDurationMs": 600181,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 1,
-        "lastError": "cron: job execution timed out",
-        "lastErrorReason": "timeout"
+        "consecutiveErrors": 2,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
       }
     },
     {
@@ -127,7 +127,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776225164913,
-      "updatedAtMs": 1776319200020,
+      "updatedAtMs": 1776340800009,
       "schedule": {
         "kind": "cron",
         "expr": "*/5 * * * *",
@@ -137,7 +137,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "node main.js scan 200"
+        "message": "Run: SKIP_MINIMAX=true node /data/workspace-inbox-guardian/main.js scan 200. Report summary."
       },
       "delivery": {
         "mode": "announce",
@@ -145,11 +145,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776319500000,
-        "lastRunAtMs": 1776319200015,
+        "nextRunAtMs": 1776341100000,
+        "lastRunAtMs": 1776340800005,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 5,
+        "lastDurationMs": 4,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -167,14 +167,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1776319226976,
-        "lastRunAtMs": 1776297627008,
+        "nextRunAtMs": 1776340826976,
+        "lastRunAtMs": 1776319226985,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 52,
+        "lastDurationMs": 29530,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776319226981
+        "runningAtMs": 1776340826981
       },
       "wakeMode": "now",
       "payload": {
@@ -182,7 +182,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1776297627060
+      "updatedAtMs": 1776319256515
     },
     {
       "id": "80e7398d-8072-4d80-9b59-ac3f8cad146c",
@@ -191,7 +191,7 @@
       "description": "Scan inbox every 5 min",
       "enabled": true,
       "createdAtMs": 1776283199227,
-      "updatedAtMs": 1776319200025,
+      "updatedAtMs": 1776340800010,
       "schedule": {
         "kind": "cron",
         "expr": "*/5 * * * *",
@@ -201,7 +201,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "node main.js scan 200"
+        "message": "Run: SKIP_MINIMAX=true node /data/workspace-inbox-guardian/main.js scan 200. Report summary."
       },
       "delivery": {
         "mode": "announce",
@@ -209,11 +209,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776319500000,
-        "lastRunAtMs": 1776319200020,
+        "nextRunAtMs": 1776341100000,
+        "lastRunAtMs": 1776340800009,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 5,
+        "lastDurationMs": 1,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -224,7 +224,7 @@
       "name": "Last Week Overtime Report",
       "enabled": true,
       "createdAtMs": 1776305194190,
-      "updatedAtMs": 1776305334715,
+      "updatedAtMs": 1776337524801,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * 4",
@@ -242,15 +242,15 @@
         "to": "channel:1492702237934358528"
       },
       "state": {
-        "nextRunAtMs": 1776337200000,
-        "lastRunAtMs": 1776305248678,
+        "nextRunAtMs": 1776942000000,
+        "lastRunAtMs": 1776337442220,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 86037,
-        "lastError": "⚠️ ✉️ Message failed",
+        "lastDurationMs": 82581,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1
+        "consecutiveErrors": 2,
+        "lastError": "⚠️ ✉️ Message failed"
       }
     },
     {

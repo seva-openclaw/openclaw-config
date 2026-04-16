@@ -1,21 +1,4 @@
 {
   "version": 1,
-  "bindings": {
-    "default:1493931329547403315": {
-      "accountId": "default",
-      "channelId": "1491789748191363074",
-      "threadId": "1493931329547403315",
-      "targetKind": "subagent",
-      "targetSessionKey": "agent:coding:subagent:6d67a9e5-4b17-4e18-8c01-7a1e5c6453a7",
-      "agentId": "coding",
-      "label": "inbox-guardian",
-      "webhookId": "1493746280894304350",
-      "webhookToken": "lZzsDKh8CjvsOxAju-rrQs4PyWU67LbpTBgbiptxxz1yYgbcXZOPSrr6NojUb28t915a",
-      "boundBy": "system",
-      "boundAt": 1776251385030,
-      "lastActivityAt": 1776251385030,
-      "idleTimeoutMs": 86400000,
-      "maxAgeMs": 0
-    }
-  }
+  "bindings": {}
 }
