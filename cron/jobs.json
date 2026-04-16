@@ -127,31 +127,32 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776225164913,
-      "updatedAtMs": 1776297075189,
+      "updatedAtMs": 1776319200020,
       "schedule": {
-        "kind": "every",
-        "everyMs": 300000,
-        "anchorMs": 1776225164913
+        "kind": "cron",
+        "expr": "*/5 * * * *",
+        "tz": "America/New_York"
       },
-      "sessionTarget": "isolated",
+      "sessionTarget": "main",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "You are Inbox Guardian 🛡️. Check Discord channel #email-labler (1493723125353938955) thread 1493753881526796298 for new messages. If there are new messages from users, process them: run 'SUPABASE_SERVICE_PAT=\"\" node /data/workspace-inbox-guardian/main.js scan 20' and post results to the thread. Report what you found."
+        "message": "node main.js scan 200"
       },
       "delivery": {
         "mode": "announce",
-        "channel": "last"
+        "channel": "discord",
+        "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776300675189,
-        "lastRunAtMs": 1776297044061,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 31128,
+        "nextRunAtMs": 1776319500000,
+        "lastRunAtMs": 1776319200015,
+        "lastRunStatus": "skipped",
+        "lastStatus": "skipped",
+        "lastDurationMs": 5,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 24,
-        "lastError": "Discord recipient is required. Use \"channel:<id>\" for channels or \"user:<id>\" for DMs."
+        "consecutiveErrors": 0,
+        "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
     {
@@ -172,7 +173,8 @@
         "lastStatus": "ok",
         "lastDurationMs": 52,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1776319226981
       },
       "wakeMode": "now",
       "payload": {
@@ -189,30 +191,100 @@
       "description": "Scan inbox every 5 min",
       "enabled": true,
       "createdAtMs": 1776283199227,
-      "updatedAtMs": 1776296223058,
+      "updatedAtMs": 1776319200025,
       "schedule": {
         "kind": "cron",
-        "expr": "*/5 * * * *"
+        "expr": "*/5 * * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "node main.js scan 200"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "channel:1493723125353938955"
+      },
+      "state": {
+        "nextRunAtMs": 1776319500000,
+        "lastRunAtMs": 1776319200020,
+        "lastRunStatus": "skipped",
+        "lastStatus": "skipped",
+        "lastDurationMs": 5,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 0,
+        "lastError": "main job requires payload.kind=\"systemEvent\""
+      }
+    },
+    {
+      "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
+      "name": "Last Week Overtime Report",
+      "enabled": true,
+      "createdAtMs": 1776305194190,
+      "updatedAtMs": 1776305334715,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * 4",
+        "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "scan"
+        "message": "Generate a report of all overtime entries for the previous week (Monday to Sunday). Work week is Monday to Sunday. Previous week = Mon-Sun of the week before current. Calculate total hours. Format the output using discord-markdown skill: present in fenced code blocks, no metadata tables, no markdown tables, use bold and plain text. Post in the #overtime channel (channel ID: 1492702237934358528)."
       },
       "delivery": {
         "mode": "announce",
-        "channel": "1493723125353938955"
+        "channel": "discord",
+        "to": "channel:1492702237934358528"
       },
       "state": {
-        "nextRunAtMs": 1776299823058,
-        "lastRunAtMs": 1776296168511,
+        "nextRunAtMs": 1776337200000,
+        "lastRunAtMs": 1776305248678,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 54547,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 8,
-        "lastError": "Unsupported channel: 1493723125353938955"
+        "lastDurationMs": 86037,
+        "lastError": "⚠️ ✉️ Message failed",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "6cc4c9cf-614b-45d0-ba5a-2495abe1119b",
+      "name": "This Week Overtime Report",
+      "enabled": true,
+      "createdAtMs": 1776305201247,
+      "updatedAtMs": 1776305427690,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 5",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate a report of all overtime entries logged so far this current week (Monday to Sunday, week starts Monday). Calculate total hours. Format the output using discord-markdown skill: present in fenced code blocks, no metadata tables, no markdown tables, use bold and plain text. Post in the #overtime channel (channel ID: 1492702237934358528)."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "channel:1492702237934358528"
+      },
+      "state": {
+        "nextRunAtMs": 1776434400000,
+        "lastRunAtMs": 1776305334766,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 92924,
+        "lastError": "⚠️ ✉️ Message failed",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1
       }
     }
   ]

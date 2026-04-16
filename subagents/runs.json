@@ -1,40 +1,4 @@
 {
   "version": 2,
-  "runs": {
-    "885e89bf-ce40-4681-87cb-80f44ee51a2d": {
-      "runId": "885e89bf-ce40-4681-87cb-80f44ee51a2d",
-      "childSessionKey": "agent:inbox-guardian:subagent:26e8d935-0ad6-4dec-8665-c6b591213ad1",
-      "controllerSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterSessionKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "requesterOrigin": {
-        "channel": "discord",
-        "to": "channel:1493723125353938955",
-        "accountId": "default"
-      },
-      "requesterDisplayKey": "agent:inbox-guardian:discord:channel:1493723125353938955",
-      "task": "Read emails from /data/workspace-inbox-guardian/state/wave3-emails.json. Each entry has {originalIndex, email, domain}. Classify entries 30-37 (originalIndex 230-237). Labels: Security(keep), Financial(keep), Personal(keep), Work(keep), Transactional(archive), Newsletter(archive), Notification(archive), Advertisement(delete), Spam(delete). Reply ONLY with valid JSON array using originalIndex values (no markdown, no text): [{\"originalIndex\":230,\"label\":\"...\",\"confidence\":0.0,\"reasoning\":\"...\"},...]",
-      "cleanup": "keep",
-      "expectsCompletionMessage": true,
-      "spawnMode": "run",
-      "model": "minimax-portal/MiniMax-M2.7-highspeed",
-      "workspaceDir": "/data/workspace-inbox-guardian",
-      "runTimeoutSeconds": 90,
-      "createdAt": 1776297452547,
-      "startedAt": 1776297459650,
-      "sessionStartedAt": 1776297452547,
-      "accumulatedRuntimeMs": 0,
-      "cleanupHandled": true,
-      "completionAnnouncedAt": 1776297751608,
-      "retainAttachmentsOnKeep": false,
-      "endedAt": 1776297490146,
-      "outcome": {
-        "status": "ok"
-      },
-      "endedReason": "subagent-complete",
-      "frozenResultText": "[{\"originalIndex\":230,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"Khan Academy educational newsletter about National Civics Bee for middle school students. Educational content, not personal or transactional.\"},{\"originalIndex\":231,\"label\":\"Advertisement\",\"confidence\":0.9,\"reasoning\":\"Canva promotional email offering 20% off Valentine's Day prints. Pure marketing/promotional content.\"},{\"originalIndex\":232,\"label\":\"Newsletter\",\"confidence\":0.85,\"reasoning\":\"AI Automation Society newsletter checking if content is still useful. Legitimate newsletter content about AI automation.\"},{\"originalIndex\":233,\"label\":\"Advertisement\",\"confidence\":0.8,\"reasoning\":\"Pinterest personalized recommendations for record storage ideas. Promotional content driven by browsing history/recommendations algorithm.\"},{\"originalIndex\":234,\"label\":\"Advertisement\",\"confidence\":0.8,\"reasoning\":\"Pinterest personalized vinyl record storage recommendations. Same pattern as 233 — algorithmic recommendations, promotional.\"},{\"originalIndex\":235,\"label\":\"Newsletter\",\"confidence\":0.8,\"reasoning\":\"Khan Academy donation appeal/newsletter thanking supporters. Fundraising newsletter from a known educational nonprofit.\"},{\"originalIndex\":236,\"label\":\"Advertisement\",\"confidence\":0.8,\"reasoning\":\"Pinterest bedroom style recommendations. Personalized home decor suggestions, algorithmic promotional content.\"},{\"originalIndex\":237,\"label\":\"Notification\",\"confidence\":0.92,\"reasoning\":\"Google Play privacy settings update — legitimate Google account/service notification about policy changes. Addressed to user by name.\"}]",
-      "frozenResultCapturedAt": 1776297493200,
-      "endedHookEmittedAt": 1776297751618,
-      "cleanupCompletedAt": 1776297751621
-    }
-  }
+  "runs": {}
 }
