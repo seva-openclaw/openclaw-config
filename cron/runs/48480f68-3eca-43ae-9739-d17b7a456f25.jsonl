@@ -1,1 +1,2 @@
 {"ts":1776222000040,"jobId":"48480f68-3eca-43ae-9739-d17b7a456f25","action":"finished","status":"ok","summary":"__openclaw_memory_core_short_term_promotion_dream__","deliveryStatus":"not-requested","runAtMs":1776222000019,"durationMs":7,"nextRunAtMs":1776308400000}
+{"ts":1776293169895,"jobId":"48480f68-3eca-43ae-9739-d17b7a456f25","action":"finished","status":"error","error":"cron: job execution timed out","deliveryStatus":"not-requested","runAtMs":1776292568506,"durationMs":601334,"nextRunAtMs":1776322800000}

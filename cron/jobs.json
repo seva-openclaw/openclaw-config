@@ -99,7 +99,7 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1776222000026,
+      "updatedAtMs": 1776293169840,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -111,13 +111,15 @@
         "text": "__openclaw_memory_core_short_term_promotion_dream__"
       },
       "state": {
-        "nextRunAtMs": 1776308400000,
-        "lastRunAtMs": 1776222000019,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 7,
+        "nextRunAtMs": 1776322800000,
+        "lastRunAtMs": 1776292568506,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 601334,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
@@ -125,7 +127,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776225164913,
-      "updatedAtMs": 1776271255715,
+      "updatedAtMs": 1776297075189,
       "schedule": {
         "kind": "every",
         "everyMs": 300000,
@@ -142,14 +144,75 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1776274855715,
-        "lastRunAtMs": 1776271189621,
+        "nextRunAtMs": 1776300675189,
+        "lastRunAtMs": 1776297044061,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 66094,
+        "lastDurationMs": 31128,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 17,
+        "consecutiveErrors": 24,
         "lastError": "Discord recipient is required. Use \"channel:<id>\" for channels or \"user:<id>\" for DMs."
+      }
+    },
+    {
+      "id": "openclaw-git-sync",
+      "name": "OpenClaw Config Git Sync",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */6 * * *",
+        "tz": "UTC",
+        "staggerMs": 300000
+      },
+      "agent": null,
+      "enabled": true,
+      "state": {
+        "nextRunAtMs": 1776319226976,
+        "lastRunAtMs": 1776297627008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 52,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      },
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "/data/.openclaw/scripts/git-sync.sh"
+      },
+      "sessionTarget": "main",
+      "updatedAtMs": 1776297627060
+    },
+    {
+      "id": "80e7398d-8072-4d80-9b59-ac3f8cad146c",
+      "agentId": "inbox-guardian",
+      "name": "Inbox Guardian Pulse",
+      "description": "Scan inbox every 5 min",
+      "enabled": true,
+      "createdAtMs": 1776283199227,
+      "updatedAtMs": 1776296223058,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/5 * * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "scan"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "1493723125353938955"
+      },
+      "state": {
+        "nextRunAtMs": 1776299823058,
+        "lastRunAtMs": 1776296168511,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 54547,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 8,
+        "lastError": "Unsupported channel: 1493723125353938955"
       }
     }
   ]
