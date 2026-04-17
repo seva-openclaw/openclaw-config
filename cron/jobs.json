@@ -35,32 +35,6 @@
       }
     },
     {
-      "id": "3eddbd4d-2b74-401f-988c-4672614c5413",
-      "name": "Morning Brief",
-      "enabled": true,
-      "createdAtMs": 1776110060138,
-      "updatedAtMs": 1776110060138,
-      "schedule": {
-        "kind": "cron",
-        "expr": "30 9 * * 0,6",
-        "tz": "America/New_York"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "You are the Morning Brief agent. Your workspace is /data/workspace-brief. Run: node main.js brief. Then send the full output to the #morning-brief Discord channel (channel ID: 1492710532082565120) using the message tool with action=send, channel=discord, target=1492710532082565120. Do not just output the text — actually send it to the channel."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "channel:1492710532082565120"
-      },
-      "state": {
-        "nextRunAtMs": 1776519000000
-      }
-    },
-    {
       "id": "48480f68-3eca-43ae-9739-d17b7a456f25",
       "name": "Memory Dreaming Promotion",
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
@@ -101,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1776362426976,
-        "lastRunAtMs": 1776340826986,
+        "nextRunAtMs": 1776384026976,
+        "lastRunAtMs": 1776362426980,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15676,
+        "lastDurationMs": 24673,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776362426979
+        "runningAtMs": 1776384027354
       },
       "wakeMode": "now",
       "payload": {
@@ -116,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1776340842662
+      "updatedAtMs": 1776362451653
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -191,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776362400021,
+      "updatedAtMs": 1776384000025,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -209,14 +183,77 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776363300000,
-        "lastRunAtMs": 1776362400012,
+        "nextRunAtMs": 1776384900000,
+        "lastRunAtMs": 1776384000015,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 9,
+        "lastDurationMs": 10,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
+      }
+    },
+    {
+      "id": "inbox-guardian-overnight",
+      "name": "Inbox Guardian Overnight",
+      "enabled": true,
+      "createdAtMs": 1776342720000,
+      "updatedAtMs": 1776370664918,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15,45 0-4 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are the Inbox Guardian. Run a scan of 200 emails and apply labels.\n\nExecute: cd /data/workspace-inbox-guardian && SUPABASE_SERVICE_PAT=\"\" node main.js scan 200\n\nReport the results as a brief summary. Do not post to Discord — just report what was found/done."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "channel:1493723125353938955"
+      },
+      "state": {
+        "nextRunAtMs": 1776399300000,
+        "lastRunAtMs": 1776370500009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "consecutiveErrors": 0,
+        "lastDurationMs": 164909,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
+      }
+    },
+    {
+      "id": "3eddbd4d-2b74-401f-988c-4672614c5413",
+      "name": "Morning Brief (Weekend)",
+      "enabled": true,
+      "createdAtMs": 1776110060138,
+      "updatedAtMs": 1776343560000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 9 * * 0,6",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are the Morning Brief agent. Your workspace is /data/workspace-brief. Run: node main.js brief --discord\n\nThe output will be prefixed with 'DISCORD_MSG:' followed by a JSON message tool payload.\n\nIf the output starts with 'DISCORD_MSG:', extract the JSON after that prefix and use the message tool (channel=discord, action=send) with that exact payload. Extract the fields: channel, action, target, message, and components — pass all of them to the message tool.\n\nReply with DONE when the Discord message has been sent."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "channel:1492710532082565120"
+      },
+      "state": {
+        "nextRunAtMs": 1776432600000,
+        "lastRunAtMs": null,
+        "lastRunStatus": null,
+        "lastStatus": null,
+        "consecutiveErrors": 0
       }
     }
   ]
