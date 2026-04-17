@@ -33,8 +33,8 @@
     "deviceId": "63cf95962bdcba285604d52661d8ba35dc50e048e3662c6c58ac3a9df57dfb83",
     "publicKey": "MuzyyJmHr7PRYKiA_1znDqoKJL5FWU7m4MfBBsQU4JE",
     "platform": "linux",
-    "clientId": "cli",
-    "clientMode": "cli",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
     "role": "operator",
     "roles": [
       "operator"
@@ -60,7 +60,8 @@
       }
     },
     "createdAtMs": 1775835981797,
-    "approvedAtMs": 1775835981797
+    "approvedAtMs": 1775835981797,
+    "displayName": "gateway:chat.history"
   },
   "c3802018476b1dde14994f9506cd9876b9541b02c39c1f38a83f75ddf1952179": {
     "deviceId": "c3802018476b1dde14994f9506cd9876b9541b02c39c1f38a83f75ddf1952179",

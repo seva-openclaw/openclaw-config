@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1776427226976,
-        "lastRunAtMs": 1776405626982,
+        "nextRunAtMs": 1776448826976,
+        "lastRunAtMs": 1776427226980,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 18166,
+        "lastDurationMs": 15519,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776427226978
+        "runningAtMs": 1776448826981
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1776405645148
+      "updatedAtMs": 1776427242499
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -131,7 +131,7 @@
       "name": "This Week Overtime Report",
       "enabled": true,
       "createdAtMs": 1776305201247,
-      "updatedAtMs": 1776305427690,
+      "updatedAtMs": 1776434706536,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * 5",
@@ -149,15 +149,14 @@
         "to": "channel:1492702237934358528"
       },
       "state": {
-        "nextRunAtMs": 1776434400000,
-        "lastRunAtMs": 1776305334766,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 92924,
-        "lastError": "⚠️ ✉️ Message failed",
+        "nextRunAtMs": 1777039200000,
+        "lastRunAtMs": 1776434400013,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 306523,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1
+        "consecutiveErrors": 0
       }
     },
     {
@@ -165,7 +164,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776427200024,
+      "updatedAtMs": 1776448800017,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -183,11 +182,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776428100000,
-        "lastRunAtMs": 1776427200011,
+        "nextRunAtMs": 1776449700000,
+        "lastRunAtMs": 1776448800008,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 13,
+        "lastDurationMs": 9,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -231,7 +230,7 @@
       "name": "Morning Brief (Weekend)",
       "enabled": true,
       "createdAtMs": 1776110060138,
-      "updatedAtMs": 1776343560000,
+      "updatedAtMs": 1776432752882,
       "schedule": {
         "kind": "cron",
         "expr": "30 9 * * 0,6",
@@ -249,10 +248,69 @@
         "to": "channel:1492710532082565120"
       },
       "state": {
-        "nextRunAtMs": 1776432600000,
+        "nextRunAtMs": 1776519000000,
+        "lastRunAtMs": 1776432600015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "consecutiveErrors": 0,
+        "lastDurationMs": 152867,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
+      }
+    },
+    {
+      "id": "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7",
+      "name": "Inbox Guardian Auto-Resolve",
+      "enabled": true,
+      "createdAtMs": 1776339600000,
+      "updatedAtMs": 1776339600000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: node /data/workspace-inbox-guardian/scripts/auto-resolve-stuck.js\n\nReply with a summary of what was auto-resolved and what is stuck needing review."
+      },
+      "state": {
+        "nextRunAtMs": 1776506400000,
         "lastRunAtMs": null,
         "lastRunStatus": null,
-        "lastStatus": null,
+        "lastStatus": "ok",
+        "lastDurationMs": null,
+        "lastDelivered": null,
+        "lastDeliveryStatus": null,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "5449097e-92e9-47bc-8514-3b6ba7660b7b",
+      "name": "Inbox Guardian Label Learning",
+      "enabled": true,
+      "createdAtMs": 1776339600000,
+      "updatedAtMs": 1776339600000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 */2 * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: node /data/workspace-inbox-guardian/scripts/suggest-label-improvements.js\n\nIf suggestions found, post them to #email-labler (1493723125353938955) and wait for approval before making any DB changes.\n\nReply with DONE when complete."
+      },
+      "state": {
+        "nextRunAtMs": 1776681000000,
+        "lastRunAtMs": null,
+        "lastRunStatus": null,
+        "lastStatus": "ok",
+        "lastDurationMs": null,
+        "lastDelivered": null,
+        "lastDeliveryStatus": null,
         "consecutiveErrors": 0
       }
     }
