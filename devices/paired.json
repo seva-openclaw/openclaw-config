@@ -61,7 +61,7 @@
     },
     "createdAtMs": 1775835981797,
     "approvedAtMs": 1775835981797,
-    "displayName": "gateway:chat.history"
+    "displayName": "gateway:sessions.patch"
   },
   "c3802018476b1dde14994f9506cd9876b9541b02c39c1f38a83f75ddf1952179": {
     "deviceId": "c3802018476b1dde14994f9506cd9876b9541b02c39c1f38a83f75ddf1952179",
