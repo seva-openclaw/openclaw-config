@@ -40,7 +40,7 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1776496200130,
+      "updatedAtMs": 1776582601373,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -52,13 +52,13 @@
         "text": "__openclaw_memory_core_short_term_promotion_dream__"
       },
       "state": {
-        "nextRunAtMs": 1776582000000,
-        "lastRunAtMs": 1776495600025,
+        "nextRunAtMs": 1776668400000,
+        "lastRunAtMs": 1776582000009,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 600105,
+        "lastDurationMs": 601364,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 4,
+        "consecutiveErrors": 5,
         "lastErrorReason": "timeout",
         "lastError": "cron: job execution timed out"
       }
@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1776578426976,
-        "lastRunAtMs": 1776556832615,
+        "nextRunAtMs": 1776600026976,
+        "lastRunAtMs": 1776578426981,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 43219,
+        "lastDurationMs": 30538,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776578426979
+        "runningAtMs": 1776600026981
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1776556875834
+      "updatedAtMs": 1776578457519
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -164,7 +164,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776578400029,
+      "updatedAtMs": 1776600000009,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -182,11 +182,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776579300000,
-        "lastRunAtMs": 1776578400016,
+        "nextRunAtMs": 1776600900000,
+        "lastRunAtMs": 1776600000005,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 13,
+        "lastDurationMs": 4,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -197,7 +197,7 @@
       "name": "Inbox Guardian Overnight",
       "enabled": true,
       "createdAtMs": 1776342720000,
-      "updatedAtMs": 1776577583405,
+      "updatedAtMs": 1776588380061,
       "schedule": {
         "kind": "cron",
         "expr": "15,45 0-4 * * *",
@@ -215,12 +215,12 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776579300000,
-        "lastRunAtMs": 1776577500018,
+        "nextRunAtMs": 1776658500000,
+        "lastRunAtMs": 1776588300008,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
         "consecutiveErrors": 0,
-        "lastDurationMs": 83387,
+        "lastDurationMs": 80053,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered"
       }
@@ -263,7 +263,7 @@
       "name": "Inbox Guardian Auto-Resolve",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776506566436,
+      "updatedAtMs": 1776592956369,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -276,14 +276,14 @@
         "message": "Run: node /data/workspace-inbox-guardian/scripts/auto-resolve-stuck.js\n\nReply with a summary of what was auto-resolved and what is stuck needing review."
       },
       "state": {
-        "nextRunAtMs": 1776592800000,
-        "lastRunAtMs": 1776506400030,
+        "nextRunAtMs": 1776679200000,
+        "lastRunAtMs": 1776592800018,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 166406,
+        "lastDurationMs": 156351,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Discord recipient is required. Use \"channel:<id>\" for channels or \"user:<id>\" for DMs."
+        "consecutiveErrors": 2,
+        "lastError": "Error"
       }
     },
     {
