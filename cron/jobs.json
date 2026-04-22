@@ -81,7 +81,8 @@
         "lastStatus": "ok",
         "lastDurationMs": 13,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1776837626978
       },
       "wakeMode": "now",
       "payload": {
@@ -163,7 +164,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776816000025,
+      "updatedAtMs": 1776837600011,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -181,11 +182,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776816900000,
-        "lastRunAtMs": 1776816000019,
+        "nextRunAtMs": 1776838500000,
+        "lastRunAtMs": 1776837600006,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 6,
+        "lastDurationMs": 5,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -196,7 +197,7 @@
       "name": "Inbox Guardian Overnight",
       "enabled": true,
       "createdAtMs": 1776342720000,
-      "updatedAtMs": 1776761206858,
+      "updatedAtMs": 1776836796507,
       "schedule": {
         "kind": "cron",
         "expr": "15,45 0-4 * * *",
@@ -214,12 +215,12 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776831300000,
-        "lastRunAtMs": 1776761100010,
+        "nextRunAtMs": 1776838500000,
+        "lastRunAtMs": 1776836700008,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
         "consecutiveErrors": 0,
-        "lastDurationMs": 106848,
+        "lastDurationMs": 96499,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered"
       }
