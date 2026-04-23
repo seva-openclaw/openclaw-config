@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1776945626976,
-        "lastRunAtMs": 1776924026986,
+        "nextRunAtMs": 1776967226976,
+        "lastRunAtMs": 1776945626996,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 26171,
+        "lastDurationMs": 31490,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1776945626983
+        "runningAtMs": 1776967226989
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1776924053157
+      "updatedAtMs": 1776945658486
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -164,7 +164,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776945600022,
+      "updatedAtMs": 1776967200011,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -182,11 +182,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1776946500000,
-        "lastRunAtMs": 1776945600012,
+        "nextRunAtMs": 1776968100000,
+        "lastRunAtMs": 1776967200007,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 10,
+        "lastDurationMs": 4,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -200,14 +200,14 @@
       "updatedAtMs": 1776934039198,
       "schedule": {
         "kind": "cron",
-        "expr": "15,45 0-4 * * *",
+        "expr": "0 2 * * *",
         "tz": "America/New_York"
       },
       "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "You are the Inbox Guardian. Run a scan of 200 emails and apply labels.\n\nExecute: cd /data/workspace-inbox-guardian && SUPABASE_SERVICE_PAT=\"\" node main.js scan 200\n\nReport the results as a brief summary. Do not post to Discord — just report what was found/done."
+        "message": "Run the email-inbox-cleanup-overnight skill.\n\nSteps:\n1. Run: WORKSPACE=/data/workspace-inbox-guardian node /root/.openclaw/skills/email-inbox-cleanup-overnight/scripts/fetch-overnight.js\n2. Run: WORKSPACE=/data/workspace-inbox-guardian node /root/.openclaw/skills/email-inbox-cleanup-overnight/scripts/apply-overnight.js with the emails array from step 1 output\n3. Post summary to #email-labler (channel 1493723125353938955) with:\n   - How many emails applied\n   - How many skipped (uncertain AI)\n   - How many new rules learned\n   - Any errors\n\nReply with DONE when complete."
       },
       "delivery": {
         "mode": "announce",
