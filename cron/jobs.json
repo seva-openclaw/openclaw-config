@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1777032026976,
-        "lastRunAtMs": 1777010594094,
+        "nextRunAtMs": 1777053626976,
+        "lastRunAtMs": 1777032026982,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 25679,
+        "lastDurationMs": 20660,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777032026979
+        "runningAtMs": 1777053626981
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777010619773
+      "updatedAtMs": 1777032047642
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -131,7 +131,7 @@
       "name": "This Week Overtime Report",
       "enabled": true,
       "createdAtMs": 1776305201247,
-      "updatedAtMs": 1776434706536,
+      "updatedAtMs": 1777039423073,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * 5",
@@ -149,14 +149,15 @@
         "to": "channel:1492702237934358528"
       },
       "state": {
-        "nextRunAtMs": 1777039200000,
-        "lastRunAtMs": 1776434400013,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 306523,
+        "nextRunAtMs": 1777644000000,
+        "lastRunAtMs": 1777039200174,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 222899,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ ✉️ Message failed"
       }
     },
     {
@@ -164,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777032000093,
+      "updatedAtMs": 1777053600030,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -182,8 +183,8 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777032900000,
-        "lastRunAtMs": 1777032000086,
+        "nextRunAtMs": 1777054500000,
+        "lastRunAtMs": 1777053600023,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
         "lastDurationMs": 7,
