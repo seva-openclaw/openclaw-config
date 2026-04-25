@@ -40,7 +40,7 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1777014600052,
+      "updatedAtMs": 1777101002249,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -52,13 +52,13 @@
         "text": "__openclaw_memory_core_short_term_promotion_dream__"
       },
       "state": {
-        "nextRunAtMs": 1777100400000,
-        "lastRunAtMs": 1777014000020,
+        "nextRunAtMs": 1777186800000,
+        "lastRunAtMs": 1777100400010,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 600032,
+        "lastDurationMs": 602239,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 10,
+        "consecutiveErrors": 11,
         "lastErrorReason": "timeout",
         "lastError": "cron: job execution timed out"
       }
@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1777096826976,
-        "lastRunAtMs": 1777075226988,
+        "nextRunAtMs": 1777118426976,
+        "lastRunAtMs": 1777097074478,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 26473,
+        "lastDurationMs": 18646,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777097074475
+        "runningAtMs": 1777118426977
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777075253461
+      "updatedAtMs": 1777097093124
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -165,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777096800013,
+      "updatedAtMs": 1777118400014,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -183,11 +183,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777097700000,
-        "lastRunAtMs": 1777096800010,
+        "nextRunAtMs": 1777119300000,
+        "lastRunAtMs": 1777118400009,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 3,
+        "lastDurationMs": 5,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -265,7 +265,7 @@
       "name": "Inbox Guardian Auto-Resolve",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777024933520,
+      "updatedAtMs": 1777111388601,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -278,13 +278,13 @@
         "message": "Run: node /data/workspace-inbox-guardian/scripts/auto-resolve-stuck.js\n\nReply with a summary of what was auto-resolved and what is stuck needing review."
       },
       "state": {
-        "nextRunAtMs": 1777111200000,
-        "lastRunAtMs": 1777024800026,
+        "nextRunAtMs": 1777197600000,
+        "lastRunAtMs": 1777111200011,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 133494,
+        "lastDurationMs": 188590,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 7,
+        "consecutiveErrors": 8,
         "lastError": "Error"
       }
     },
@@ -293,7 +293,7 @@
       "name": "Inbox Guardian Label Learning",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1776938668158,
+      "updatedAtMs": 1777111423115,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 */2 * *",
@@ -306,13 +306,13 @@
         "message": "Run: node /data/workspace-inbox-guardian/scripts/suggest-label-improvements.js\n\nIf suggestions found, post them to #email-labler (1493723125353938955) and wait for approval before making any DB changes.\n\nReply with DONE when complete."
       },
       "state": {
-        "nextRunAtMs": 1777111200000,
-        "lastRunAtMs": 1776938498330,
+        "nextRunAtMs": 1777284000000,
+        "lastRunAtMs": 1777111388601,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 169828,
+        "lastDurationMs": 34514,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 3,
+        "consecutiveErrors": 4,
         "lastError": "Error"
       }
     }
