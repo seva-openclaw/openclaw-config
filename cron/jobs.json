@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1777118426976,
-        "lastRunAtMs": 1777097074478,
+        "nextRunAtMs": 1777140026976,
+        "lastRunAtMs": 1777118426979,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 18646,
+        "lastDurationMs": 18382,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777118426977
+        "runningAtMs": 1777140026978
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777097093124
+      "updatedAtMs": 1777118445361
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -165,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777118400014,
+      "updatedAtMs": 1777140000007,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -183,11 +183,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777119300000,
-        "lastRunAtMs": 1777118400009,
+        "nextRunAtMs": 1777140900000,
+        "lastRunAtMs": 1777140000004,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 5,
+        "lastDurationMs": 3,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -232,7 +232,7 @@
       "name": "Morning Brief (Weekend)",
       "enabled": true,
       "createdAtMs": 1776110060138,
-      "updatedAtMs": 1776605621039,
+      "updatedAtMs": 1777123987578,
       "schedule": {
         "kind": "cron",
         "expr": "30 9 * * 0,6",
@@ -250,12 +250,12 @@
         "to": "channel:1492710532082565120"
       },
       "state": {
-        "nextRunAtMs": 1777123800000,
-        "lastRunAtMs": 1776605400007,
+        "nextRunAtMs": 1777210200000,
+        "lastRunAtMs": 1777123800007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
         "consecutiveErrors": 0,
-        "lastDurationMs": 221032,
+        "lastDurationMs": 187571,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered"
       }
