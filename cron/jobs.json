@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1777075226976,
-        "lastRunAtMs": 1777053626983,
+        "nextRunAtMs": 1777096826976,
+        "lastRunAtMs": 1777075226988,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19866,
+        "lastDurationMs": 26473,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777075226983
+        "runningAtMs": 1777097074475
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777053646849
+      "updatedAtMs": 1777075253461
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -165,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777075200058,
+      "updatedAtMs": 1777096800013,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -183,11 +183,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777076100000,
-        "lastRunAtMs": 1777075200020,
+        "nextRunAtMs": 1777097700000,
+        "lastRunAtMs": 1777096800010,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 38,
+        "lastDurationMs": 3,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -198,7 +198,7 @@
       "name": "Inbox Guardian Overnight",
       "enabled": true,
       "createdAtMs": 1776342720000,
-      "updatedAtMs": 1777010591924,
+      "updatedAtMs": 1777097072235,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
@@ -216,12 +216,12 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777096800000,
-        "lastRunAtMs": 1777010400019,
+        "nextRunAtMs": 1777183200000,
+        "lastRunAtMs": 1777096800013,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "consecutiveErrors": 2,
-        "lastDurationMs": 191905,
+        "consecutiveErrors": 3,
+        "lastDurationMs": 272222,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "lastError": "⚠️ ✉️ Message failed"
