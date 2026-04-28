@@ -6,7 +6,7 @@
       "name": "Morning Brief",
       "enabled": true,
       "createdAtMs": 1776110036931,
-      "updatedAtMs": 1777285977246,
+      "updatedAtMs": 1777372355981,
       "schedule": {
         "kind": "cron",
         "expr": "30 6 * * 1-5",
@@ -24,11 +24,11 @@
         "to": "channel:1492710532082565120"
       },
       "state": {
-        "nextRunAtMs": 1777372200000,
-        "lastRunAtMs": 1777285800009,
+        "nextRunAtMs": 1777458600000,
+        "lastRunAtMs": 1777372200009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 177237,
+        "lastDurationMs": 155972,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -40,7 +40,7 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1777273801950,
+      "updatedAtMs": 1777360200043,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -52,13 +52,13 @@
         "text": "__openclaw_memory_core_short_term_promotion_dream__"
       },
       "state": {
-        "nextRunAtMs": 1777359600000,
-        "lastRunAtMs": 1777273200013,
+        "nextRunAtMs": 1777446000000,
+        "lastRunAtMs": 1777359600005,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 601937,
+        "lastDurationMs": 600038,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 13,
+        "consecutiveErrors": 14,
         "lastErrorReason": "timeout",
         "lastError": "cron: job execution timed out"
       }
@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1777356026976,
-        "lastRunAtMs": 1777334427009,
+        "nextRunAtMs": 1777377626976,
+        "lastRunAtMs": 1777356236373,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 35842,
+        "lastDurationMs": 23816,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777356236372
+        "runningAtMs": 1777377626978
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777334462851
+      "updatedAtMs": 1777356260189
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -165,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777356000015,
+      "updatedAtMs": 1777377600010,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -183,8 +183,8 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777356900000,
-        "lastRunAtMs": 1777356000012,
+        "nextRunAtMs": 1777378500000,
+        "lastRunAtMs": 1777377600007,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
         "lastDurationMs": 3,
@@ -265,7 +265,7 @@
       "name": "Inbox Guardian Auto-Resolve",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777284197890,
+      "updatedAtMs": 1777370612189,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -278,13 +278,13 @@
         "message": "Run: node /data/workspace-inbox-guardian/scripts/auto-resolve-stuck.js\n\nReply with a summary of what was auto-resolved and what is stuck needing review."
       },
       "state": {
-        "nextRunAtMs": 1777370400000,
-        "lastRunAtMs": 1777284000023,
+        "nextRunAtMs": 1777456800000,
+        "lastRunAtMs": 1777370400010,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 197867,
+        "lastDurationMs": 212179,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 10,
+        "consecutiveErrors": 11,
         "lastError": "Error"
       }
     },
