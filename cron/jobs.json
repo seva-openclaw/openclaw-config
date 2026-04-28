@@ -75,14 +75,14 @@
       "agent": null,
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1777377626976,
-        "lastRunAtMs": 1777356236373,
+        "nextRunAtMs": 1777399226976,
+        "lastRunAtMs": 1777377626984,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 23816,
+        "lastDurationMs": 19822,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1777377626978
+        "runningAtMs": 1777399226981
       },
       "wakeMode": "now",
       "payload": {
@@ -90,7 +90,7 @@
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777356260189
+      "updatedAtMs": 1777377646806
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
@@ -165,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777377600010,
+      "updatedAtMs": 1777399200012,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -183,8 +183,8 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777378500000,
-        "lastRunAtMs": 1777377600007,
+        "nextRunAtMs": 1777400100000,
+        "lastRunAtMs": 1777399200009,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
         "lastDurationMs": 3,
