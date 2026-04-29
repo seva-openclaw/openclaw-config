@@ -6,7 +6,7 @@
       "name": "Morning Brief",
       "enabled": true,
       "createdAtMs": 1776110036931,
-      "updatedAtMs": 1777372355981,
+      "updatedAtMs": 1777458809263,
       "schedule": {
         "kind": "cron",
         "expr": "30 6 * * 1-5",
@@ -24,11 +24,11 @@
         "to": "channel:1492710532082565120"
       },
       "state": {
-        "nextRunAtMs": 1777458600000,
-        "lastRunAtMs": 1777372200009,
+        "nextRunAtMs": 1777545000000,
+        "lastRunAtMs": 1777458600010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 155972,
+        "lastDurationMs": 209253,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -40,7 +40,7 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1777360200043,
+      "updatedAtMs": 1777446600543,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
@@ -52,13 +52,13 @@
         "text": "__openclaw_memory_core_short_term_promotion_dream__"
       },
       "state": {
-        "nextRunAtMs": 1777446000000,
-        "lastRunAtMs": 1777359600005,
+        "nextRunAtMs": 1777532400000,
+        "lastRunAtMs": 1777446000016,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 600038,
+        "lastDurationMs": 600527,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 14,
+        "consecutiveErrors": 15,
         "lastErrorReason": "timeout",
         "lastError": "cron: job execution timed out"
       }
@@ -81,7 +81,8 @@
         "lastStatus": "ok",
         "lastDurationMs": 4,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1777464026981
       },
       "wakeMode": "now",
       "payload": {
@@ -164,7 +165,7 @@
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777442400013,
+      "updatedAtMs": 1777464000023,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -182,11 +183,11 @@
         "to": "channel:1493723125353938955"
       },
       "state": {
-        "nextRunAtMs": 1777443300000,
-        "lastRunAtMs": 1777442400008,
+        "nextRunAtMs": 1777464900000,
+        "lastRunAtMs": 1777464000019,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 5,
+        "lastDurationMs": 4,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
         "lastError": "main job requires payload.kind=\"systemEvent\""
@@ -264,7 +265,7 @@
       "name": "Inbox Guardian Auto-Resolve",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777370612189,
+      "updatedAtMs": 1777456986787,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -277,13 +278,13 @@
         "message": "Run: node /data/workspace-inbox-guardian/scripts/auto-resolve-stuck.js\n\nReply with a summary of what was auto-resolved and what is stuck needing review."
       },
       "state": {
-        "nextRunAtMs": 1777456800000,
-        "lastRunAtMs": 1777370400010,
+        "nextRunAtMs": 1777543200000,
+        "lastRunAtMs": 1777456800010,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 212179,
+        "lastDurationMs": 186777,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 11,
+        "consecutiveErrors": 12,
         "lastError": "Error"
       }
     },
@@ -292,7 +293,7 @@
       "name": "Inbox Guardian Label Learning",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777284223228,
+      "updatedAtMs": 1777457021955,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 */2 * *",
@@ -305,13 +306,13 @@
         "message": "Run: node /data/workspace-inbox-guardian/scripts/suggest-label-improvements.js\n\nIf suggestions found, post them to #email-labler (1493723125353938955) and wait for approval before making any DB changes.\n\nReply with DONE when complete."
       },
       "state": {
-        "nextRunAtMs": 1777456800000,
-        "lastRunAtMs": 1777284197890,
+        "nextRunAtMs": 1777629600000,
+        "lastRunAtMs": 1777456986787,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 25338,
+        "lastDurationMs": 35168,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 5,
+        "consecutiveErrors": 6,
         "lastError": "Error"
       }
     }
