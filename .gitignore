@@ -20,3 +20,4 @@ memory/*.sqlite
 tasks/runs.sqlite*
 flows/registry.sqlite*
 openclaw.json
+openclaw.json.last-good
