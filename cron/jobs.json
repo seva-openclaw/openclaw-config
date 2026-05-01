@@ -6,7 +6,6 @@
       "name": "Morning Brief",
       "enabled": true,
       "createdAtMs": 1776110036931,
-      "updatedAtMs": 1777545314906,
       "schedule": {
         "kind": "cron",
         "expr": "30 6 * * 1-5",
@@ -23,16 +22,7 @@
         "channel": "discord",
         "to": "channel:1492710532082565120"
       },
-      "state": {
-        "nextRunAtMs": 1777631400000,
-        "lastRunAtMs": 1777545000152,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 314754,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
-      }
+      "state": {}
     },
     {
       "id": "48480f68-3eca-43ae-9739-d17b7a456f25",
@@ -40,28 +30,21 @@
       "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
       "enabled": true,
       "createdAtMs": 1776207860385,
-      "updatedAtMs": 1777533262722,
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *"
       },
-      "sessionTarget": "main",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
-        "kind": "systemEvent",
-        "text": "__openclaw_memory_core_short_term_promotion_dream__"
+        "kind": "agentTurn",
+        "message": "__openclaw_memory_core_short_term_promotion_dream__",
+        "lightContext": true
       },
-      "state": {
-        "nextRunAtMs": 1777618800000,
-        "lastRunAtMs": 1777532662694,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 600028,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 16,
-        "lastErrorReason": "timeout",
-        "lastError": "cron: job execution timed out"
-      }
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
     },
     {
       "id": "openclaw-git-sync",
@@ -74,30 +57,19 @@
       },
       "agent": null,
       "enabled": true,
-      "state": {
-        "nextRunAtMs": 1777572026976,
-        "lastRunAtMs": 1777550426982,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 19115,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1777572026981
-      },
       "wakeMode": "now",
       "payload": {
         "kind": "systemEvent",
         "text": "/data/.openclaw/scripts/git-sync.sh"
       },
       "sessionTarget": "main",
-      "updatedAtMs": 1777550446097
+      "state": {}
     },
     {
       "id": "0ecd7690-6592-48c9-8dcc-c170f332c209",
       "name": "Last Week Overtime Report",
       "enabled": true,
       "createdAtMs": 1776305194190,
-      "updatedAtMs": 1777547054641,
       "schedule": {
         "kind": "cron",
         "expr": "0 7 * * 4",
@@ -114,24 +86,13 @@
         "channel": "discord",
         "to": "channel:1492702237934358528"
       },
-      "state": {
-        "nextRunAtMs": 1778151600000,
-        "lastRunAtMs": 1777546800282,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 254359,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 4,
-        "lastError": "⚠️ ✉️ Message failed"
-      }
+      "state": {}
     },
     {
       "id": "6cc4c9cf-614b-45d0-ba5a-2495abe1119b",
       "name": "This Week Overtime Report",
       "enabled": true,
       "createdAtMs": 1776305201247,
-      "updatedAtMs": 1777039423073,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 * * 5",
@@ -148,24 +109,13 @@
         "channel": "discord",
         "to": "channel:1492702237934358528"
       },
-      "state": {
-        "nextRunAtMs": 1777644000000,
-        "lastRunAtMs": 1777039200174,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 222899,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "⚠️ ✉️ Message failed"
-      }
+      "state": {}
     },
     {
       "id": "0f8966e6-1465-483d-9254-8dc9c1f5093a",
       "name": "Inbox Guardian Pulse",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777572000011,
       "schedule": {
         "kind": "cron",
         "expr": "*/15 * * * *",
@@ -182,23 +132,13 @@
         "channel": "discord",
         "to": "channel:1493723125353938955"
       },
-      "state": {
-        "nextRunAtMs": 1777572900000,
-        "lastRunAtMs": 1777572000005,
-        "lastRunStatus": "skipped",
-        "lastStatus": "skipped",
-        "lastDurationMs": 6,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 0,
-        "lastError": "main job requires payload.kind=\"systemEvent\""
-      }
+      "state": {}
     },
     {
       "id": "inbox-guardian-overnight",
       "name": "Inbox Guardian Overnight",
       "enabled": true,
       "createdAtMs": 1776342720000,
-      "updatedAtMs": 1777529019820,
       "schedule": {
         "kind": "cron",
         "expr": "0 2 * * *",
@@ -215,24 +155,13 @@
         "channel": "discord",
         "to": "channel:1493723125353938955"
       },
-      "state": {
-        "nextRunAtMs": 1777615200000,
-        "lastRunAtMs": 1777528800030,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "consecutiveErrors": 8,
-        "lastDurationMs": 219790,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "lastError": "⚠️ ✉️ Message failed"
-      }
+      "state": {}
     },
     {
       "id": "3eddbd4d-2b74-401f-988c-4672614c5413",
       "name": "Morning Brief (Weekend)",
       "enabled": true,
       "createdAtMs": 1776110060138,
-      "updatedAtMs": 1777210358838,
       "schedule": {
         "kind": "cron",
         "expr": "30 9 * * 0,6",
@@ -249,23 +178,13 @@
         "channel": "discord",
         "to": "channel:1492710532082565120"
       },
-      "state": {
-        "nextRunAtMs": 1777728600000,
-        "lastRunAtMs": 1777210200048,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "consecutiveErrors": 0,
-        "lastDurationMs": 158790,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered"
-      }
+      "state": {}
     },
     {
       "id": "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7",
       "name": "Inbox Guardian Auto-Resolve",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777543460545,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 * * *",
@@ -277,23 +196,16 @@
         "kind": "agentTurn",
         "message": "Run: node /data/workspace-inbox-guardian/scripts/auto-resolve-stuck.js\n\nReply with a summary of what was auto-resolved and what is stuck needing review."
       },
-      "state": {
-        "nextRunAtMs": 1777629600000,
-        "lastRunAtMs": 1777543200253,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 260292,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 13,
-        "lastError": "Error"
-      }
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {}
     },
     {
       "id": "5449097e-92e9-47bc-8514-3b6ba7660b7b",
       "name": "Inbox Guardian Label Learning",
       "enabled": true,
       "createdAtMs": 1776339600000,
-      "updatedAtMs": 1777457021955,
       "schedule": {
         "kind": "cron",
         "expr": "0 6 */2 * *",
@@ -305,16 +217,10 @@
         "kind": "agentTurn",
         "message": "Run: node /data/workspace-inbox-guardian/scripts/suggest-label-improvements.js\n\nIf suggestions found, post them to #email-labler (1493723125353938955) and wait for approval before making any DB changes.\n\nReply with DONE when complete."
       },
-      "state": {
-        "nextRunAtMs": 1777629600000,
-        "lastRunAtMs": 1777456986787,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 35168,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 6,
-        "lastError": "Error"
-      }
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {}
     }
   ]
 }
