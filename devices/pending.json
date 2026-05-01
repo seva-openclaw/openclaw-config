@@ -1,1 +1,24 @@
-{}
+{
+  "180502c0-7999-43b4-a292-f6911a3690a7": {
+    "requestId": "180502c0-7999-43b4-a292-f6911a3690a7",
+    "deviceId": "405cc2dd480155c749948d038ac8aaea0be512c89bfcb02c2470850eac3fceae",
+    "publicKey": "-UZV74M57MZcRBo1Y7EJC8WybI_rqfrvHn9nlPsanaY",
+    "platform": "Win32",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "silent": false,
+    "isRepair": false,
+    "ts": 1777634996013
+  }
+}
