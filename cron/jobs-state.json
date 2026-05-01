@@ -31,18 +31,17 @@
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1777615602530,
+      "updatedAtMs": 1777636848128,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1777636826976,
-        "lastRunAtMs": 1777615427565,
+        "nextRunAtMs": 1777658426976,
+        "lastRunAtMs": 1777636826983,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 174965,
+        "lastDurationMs": 21145,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 0,
-        "runningAtMs": 1777636826981
+        "consecutiveSkipped": 0
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -61,32 +60,32 @@
       }
     },
     "6cc4c9cf-614b-45d0-ba5a-2495abe1119b": {
-      "updatedAtMs": 1777039423073,
+      "updatedAtMs": 1777644287925,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 10 * * 5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1777644000000,
-        "lastRunAtMs": 1777039200174,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 222899,
+        "nextRunAtMs": 1778248800000,
+        "lastRunAtMs": 1777644000011,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 287914,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "⚠️ ✉️ Message failed"
+        "consecutiveErrors": 0,
+        "consecutiveSkipped": 0
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1777636800024,
+      "updatedAtMs": 1777652100009,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1777637700000,
-        "lastRunAtMs": 1777636800016,
+        "nextRunAtMs": 1777653000000,
+        "lastRunAtMs": 1777652100008,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 8,
+        "lastDurationMs": 1,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 59,
+        "consecutiveSkipped": 76,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
