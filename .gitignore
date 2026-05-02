@@ -21,3 +21,11 @@ tasks/runs.sqlite*
 flows/registry.sqlite*
 openclaw.json
 openclaw.json.last-good
+# SQLite temp files
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-wal
+
+# Cron run logs
+cron/runs/
