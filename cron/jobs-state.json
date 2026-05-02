@@ -41,7 +41,8 @@
         "lastDurationMs": 22707,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 0
+        "consecutiveSkipped": 0,
+        "runningAtMs": 1777680028871
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -75,17 +76,17 @@
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1777668304577,
+      "updatedAtMs": 1777680000007,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1777669200000,
-        "lastRunAtMs": 1777668304575,
+        "nextRunAtMs": 1777680900000,
+        "lastRunAtMs": 1777680000005,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
         "lastDurationMs": 2,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 94,
+        "consecutiveSkipped": 107,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
@@ -146,6 +147,22 @@
         "consecutiveErrors": 7,
         "lastError": "Error",
         "consecutiveSkipped": 0
+      }
+    },
+    "27a8905e-eafb-4167-b547-029e598117fc": {
+      "updatedAtMs": 1777679625509,
+      "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"every\",\"everyMs\":300000,\"anchorMs\":1777670204760}}",
+      "state": {
+        "nextRunAtMs": 1777683225509,
+        "lastRunAtMs": 1777679605784,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 19725,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 7,
+        "consecutiveSkipped": 0,
+        "lastDelivered": true,
+        "lastError": "⚠️ 📖 Read: `from ~/workspace-inbox-guardian/state/important-email-notify.json` failed"
       }
     }
   }

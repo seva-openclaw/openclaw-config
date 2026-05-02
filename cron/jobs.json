@@ -221,6 +221,31 @@
         "mode": "announce"
       },
       "state": {}
+    },
+    {
+      "id": "27a8905e-eafb-4167-b547-029e598117fc",
+      "agentId": "google",
+      "name": "Email Guardian — Important Alert",
+      "enabled": true,
+      "createdAtMs": 1777670204760,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 300000,
+        "anchorMs": 1777670204760
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "You are the Email Guardian for important email alerts. Check /data/workspace-inbox-guardian/state/important-email-notify.json — if it exists, read it and send its contents as a Discord message to this channel. Then delete the file. If the file doesn't exist, reply with NO_REPLY.",
+        "timeoutSeconds": 30
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last",
+        "to": "1499881154210299924"
+      },
+      "state": {}
     }
   ]
 }
