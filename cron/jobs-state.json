@@ -17,32 +17,32 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1777618984689,
+      "updatedAtMs": 1777705524400,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1777705200000,
-        "lastRunAtMs": 1777618800012,
+        "nextRunAtMs": 1777791600000,
+        "lastRunAtMs": 1777705200071,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 184677,
+        "lastDurationMs": 324329,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1777680078075,
+      "updatedAtMs": 1777701914195,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1777701626976,
-        "lastRunAtMs": 1777680028875,
+        "nextRunAtMs": 1777723226976,
+        "lastRunAtMs": 1777701892985,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 49200,
+        "lastDurationMs": 21210,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1777701892982
+        "runningAtMs": 1777723226981
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -76,17 +76,17 @@
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1777701600007,
+      "updatedAtMs": 1777723200012,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1777702500000,
-        "lastRunAtMs": 1777701600006,
+        "nextRunAtMs": 1777724100000,
+        "lastRunAtMs": 1777723200008,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 1,
+        "lastDurationMs": 4,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 131,
+        "consecutiveSkipped": 155,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
@@ -120,18 +120,18 @@
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
-      "updatedAtMs": 1777629787027,
+      "updatedAtMs": 1777716171883,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1777716000000,
-        "lastRunAtMs": 1777629600011,
+        "nextRunAtMs": 1777802400000,
+        "lastRunAtMs": 1777716000010,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 187016,
+        "lastDurationMs": 171873,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 14,
-        "lastError": "Error",
-        "consecutiveSkipped": 0
+        "consecutiveErrors": 15,
+        "consecutiveSkipped": 0,
+        "lastError": "Error"
       }
     },
     "5449097e-92e9-47bc-8514-3b6ba7660b7b": {
@@ -150,16 +150,16 @@
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
-      "updatedAtMs": 1777701354920,
+      "updatedAtMs": 1777723093137,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"every\",\"everyMs\":300000,\"anchorMs\":1777670204760}}",
       "state": {
-        "nextRunAtMs": 1777704954920,
-        "lastRunAtMs": 1777701333232,
+        "nextRunAtMs": 1777726693137,
+        "lastRunAtMs": 1777723071719,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 21688,
+        "lastDurationMs": 21418,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 13,
+        "consecutiveErrors": 19,
         "consecutiveSkipped": 0,
         "lastDelivered": true,
         "lastError": "⚠️ 📖 Read: `from ~/workspace-inbox-guardian/state/important-email-notify.json` failed"
