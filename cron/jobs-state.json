@@ -2,48 +2,47 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1778754770157,
+      "updatedAtMs": 1778841243235,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778841000000,
-        "lastRunAtMs": 1778754600016,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 170141,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 4,
+        "nextRunAtMs": 1779100200000,
+        "lastRunAtMs": 1778841000007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 243228,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "lastErrorReason": "rate_limit",
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, 5-hour usage limit reached for Token Plan Starter (0/0 used), resets at 2026-05-14T15:00:00Z (2056)"
+        "lastDelivered": true
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1778742150776,
+      "updatedAtMs": 1778828577595,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1778828400000,
-        "lastRunAtMs": 1778742000011,
+        "nextRunAtMs": 1778914800000,
+        "lastRunAtMs": 1778828400007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 150765,
+        "lastDurationMs": 177588,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1778803298804,
+      "updatedAtMs": 1778825518294,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1778824826976,
-        "lastRunAtMs": 1778803226991,
+        "nextRunAtMs": 1778846426976,
+        "lastRunAtMs": 1778825446347,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 71813,
+        "lastDurationMs": 71947,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1778825446345
+        "runningAtMs": 1778846426981
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -78,17 +77,17 @@
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1778824800018,
+      "updatedAtMs": 1778846400031,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778825700000,
-        "lastRunAtMs": 1778824800013,
+        "nextRunAtMs": 1778847300000,
+        "lastRunAtMs": 1778846400024,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 5,
+        "lastDurationMs": 7,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 1379,
+        "consecutiveSkipped": 1403,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
@@ -124,48 +123,46 @@
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
-      "updatedAtMs": 1778753009563,
+      "updatedAtMs": 1778839358898,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778839200000,
-        "lastRunAtMs": 1778752800011,
+        "nextRunAtMs": 1778925600000,
+        "lastRunAtMs": 1778839200021,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 209552,
+        "lastDurationMs": 158877,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 27,
+        "consecutiveErrors": 28,
         "consecutiveSkipped": 0,
-        "lastErrorReason": "rate_limit",
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, 5-hour usage limit reached for Token Plan Starter (0/0 used), resets at 2026-05-14T15:00:00Z (2056)"
+        "lastError": "Error"
       }
     },
     "5449097e-92e9-47bc-8514-3b6ba7660b7b": {
-      "updatedAtMs": 1778666583320,
+      "updatedAtMs": 1778839421706,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 */2 * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778839200000,
-        "lastRunAtMs": 1778666580920,
+        "nextRunAtMs": 1779012000000,
+        "lastRunAtMs": 1778839358898,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 2400,
+        "lastDurationMs": 62808,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 13,
+        "consecutiveErrors": 14,
         "consecutiveSkipped": 0,
-        "lastErrorReason": "rate_limit",
-        "lastError": "FallbackSummaryError: All models failed (1): minimax-portal/MiniMax-M2.7-highspeed: Provider minimax-portal is in cooldown (all profiles unavailable) (rate_limit)"
+        "lastError": "Error"
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
-      "updatedAtMs": 1778823511287,
+      "updatedAtMs": 1778845247273,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"every\",\"everyMs\":300000,\"anchorMs\":1777670204760}}",
       "state": {
-        "nextRunAtMs": 1778827111287,
-        "lastRunAtMs": 1778823492292,
+        "nextRunAtMs": 1778848847273,
+        "lastRunAtMs": 1778845226312,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 18995,
+        "lastDurationMs": 20961,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 322,
+        "consecutiveErrors": 328,
         "consecutiveSkipped": 0,
         "lastDelivered": true,
         "lastError": "⚠️ 📖 Read: `from ~/workspace-inbox-guardian/state/important-email-notify.json` failed"
