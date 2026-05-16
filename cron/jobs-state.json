@@ -31,18 +31,18 @@
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1778868091712,
+      "updatedAtMs": 1778889709089,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1778889626976,
-        "lastRunAtMs": 1778868026983,
+        "nextRunAtMs": 1778911226976,
+        "lastRunAtMs": 1778889626997,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 64729,
+        "lastDurationMs": 82092,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1778889626986
+        "runningAtMs": 1778911749392
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -77,30 +77,30 @@
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1778889600088,
+      "updatedAtMs": 1778911200021,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778890500000,
-        "lastRunAtMs": 1778889600071,
+        "nextRunAtMs": 1778912100000,
+        "lastRunAtMs": 1778911200009,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 17,
+        "lastDurationMs": 12,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 1451,
+        "consecutiveSkipped": 1475,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
     "inbox-guardian-overnight": {
-      "updatedAtMs": 1778825443741,
+      "updatedAtMs": 1778911746381,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 2 * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778911200000,
-        "lastRunAtMs": 1778824800018,
+        "nextRunAtMs": 1778997600000,
+        "lastRunAtMs": 1778911200021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
         "consecutiveErrors": 0,
-        "lastDurationMs": 643723,
+        "lastDurationMs": 546360,
         "lastDeliveryStatus": "delivered",
         "consecutiveSkipped": 0,
         "lastDelivered": true
@@ -153,16 +153,16 @@
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
-      "updatedAtMs": 1778887221598,
+      "updatedAtMs": 1778908955219,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"every\",\"everyMs\":300000,\"anchorMs\":1777670204760}}",
       "state": {
-        "nextRunAtMs": 1778890821598,
-        "lastRunAtMs": 1778887204263,
+        "nextRunAtMs": 1778912555219,
+        "lastRunAtMs": 1778908937939,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 17335,
+        "lastDurationMs": 17280,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 8,
+        "consecutiveErrors": 14,
         "consecutiveSkipped": 0,
         "lastDelivered": true,
         "lastError": "⚠️ 📖 Read: `from ~/workspace-inbox-guardian/state/important-email-notify.json` failed"
