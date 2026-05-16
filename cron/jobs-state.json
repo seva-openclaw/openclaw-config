@@ -31,18 +31,18 @@
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1778911824744,
+      "updatedAtMs": 1778932897471,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1778932826976,
-        "lastRunAtMs": 1778911749441,
+        "nextRunAtMs": 1778954426976,
+        "lastRunAtMs": 1778932836493,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 75303,
+        "lastDurationMs": 60978,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1778932836486
+        "runningAtMs": 1778954426983
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -77,17 +77,17 @@
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1778932800019,
+      "updatedAtMs": 1778954400016,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778933700000,
-        "lastRunAtMs": 1778932800013,
+        "nextRunAtMs": 1778955300000,
+        "lastRunAtMs": 1778954400010,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
         "lastDurationMs": 6,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 1499,
+        "consecutiveSkipped": 1523,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
@@ -107,19 +107,18 @@
       }
     },
     "3eddbd4d-2b74-401f-988c-4672614c5413": {
-      "updatedAtMs": 1778419971900,
+      "updatedAtMs": 1778938398788,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 9 * * 0,6\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778938200000,
-        "lastRunAtMs": 1778419800014,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "consecutiveErrors": 2,
-        "lastDurationMs": 171886,
-        "lastDeliveryStatus": "unknown",
+        "nextRunAtMs": 1779024600000,
+        "lastRunAtMs": 1778938200014,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "consecutiveErrors": 0,
+        "lastDurationMs": 198774,
+        "lastDeliveryStatus": "delivered",
         "consecutiveSkipped": 0,
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, 5-hour usage limit reached for Token Plan Starter (0/0 used), resets at 2026-05-10T15:00:00Z (2056)",
-        "lastErrorReason": "rate_limit"
+        "lastDelivered": true
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
@@ -153,19 +152,19 @@
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
-      "updatedAtMs": 1778932834463,
+      "updatedAtMs": 1778950969232,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"every\",\"everyMs\":300000,\"anchorMs\":1777670204760}}",
       "state": {
-        "nextRunAtMs": 1778936434463,
-        "lastRunAtMs": 1778932802914,
+        "nextRunAtMs": 1778954569232,
+        "lastRunAtMs": 1778950945464,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 31549,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 5,
+        "lastDurationMs": 23768,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 10,
         "consecutiveSkipped": 0,
-        "lastError": "cron: job execution timed out",
-        "lastErrorReason": "timeout"
+        "lastDelivered": true,
+        "lastError": "⚠️ 📖 Read: `from ~/workspace-inbox-guardian/state/important-email-notify.json` failed"
       }
     }
   }
