@@ -17,32 +17,32 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1778828577595,
+      "updatedAtMs": 1778914963561,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1778914800000,
-        "lastRunAtMs": 1778828400007,
+        "nextRunAtMs": 1779001200000,
+        "lastRunAtMs": 1778914800012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 177588,
+        "lastDurationMs": 163549,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1778889709089,
+      "updatedAtMs": 1778911824744,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1778911226976,
-        "lastRunAtMs": 1778889626997,
+        "nextRunAtMs": 1778932826976,
+        "lastRunAtMs": 1778911749441,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 82092,
+        "lastDurationMs": 75303,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1778911749392
+        "runningAtMs": 1778932836486
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -77,17 +77,17 @@
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
-      "updatedAtMs": 1778911200021,
+      "updatedAtMs": 1778932800019,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"*/15 * * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778912100000,
-        "lastRunAtMs": 1778911200009,
+        "nextRunAtMs": 1778933700000,
+        "lastRunAtMs": 1778932800013,
         "lastRunStatus": "skipped",
         "lastStatus": "skipped",
-        "lastDurationMs": 12,
+        "lastDurationMs": 6,
         "lastDeliveryStatus": "unknown",
         "consecutiveErrors": 0,
-        "consecutiveSkipped": 1475,
+        "consecutiveSkipped": 1499,
         "lastError": "main job requires payload.kind=\"systemEvent\""
       }
     },
@@ -123,16 +123,16 @@
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
-      "updatedAtMs": 1778839358898,
+      "updatedAtMs": 1778925779528,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 * * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1778925600000,
-        "lastRunAtMs": 1778839200021,
+        "nextRunAtMs": 1779012000000,
+        "lastRunAtMs": 1778925600021,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 158877,
+        "lastDurationMs": 179507,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 28,
+        "consecutiveErrors": 29,
         "consecutiveSkipped": 0,
         "lastError": "Error"
       }
@@ -153,19 +153,19 @@
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
-      "updatedAtMs": 1778908955219,
+      "updatedAtMs": 1778932834463,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"every\",\"everyMs\":300000,\"anchorMs\":1777670204760}}",
       "state": {
-        "nextRunAtMs": 1778912555219,
-        "lastRunAtMs": 1778908937939,
+        "nextRunAtMs": 1778936434463,
+        "lastRunAtMs": 1778932802914,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 17280,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 14,
+        "lastDurationMs": 31549,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 5,
         "consecutiveSkipped": 0,
-        "lastDelivered": true,
-        "lastError": "⚠️ 📖 Read: `from ~/workspace-inbox-guardian/state/important-email-notify.json` failed"
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     }
   }
