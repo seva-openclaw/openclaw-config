@@ -114,7 +114,7 @@
     {
       "id": "0f8966e6-1465-483d-9254-8dc9c1f5093a",
       "name": "Inbox Guardian Pulse",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1776339600000,
       "schedule": {
         "kind": "cron",
@@ -127,17 +127,12 @@
         "kind": "agentTurn",
         "message": "SKIP_MINIMAX=true node /data/workspace-inbox-guardian/main.js scan 200"
       },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "channel:1493723125353938955"
-      },
       "state": {}
     },
     {
       "id": "inbox-guardian-overnight",
       "name": "Inbox Guardian Overnight",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1776342720000,
       "schedule": {
         "kind": "cron",
@@ -183,7 +178,7 @@
     {
       "id": "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7",
       "name": "Inbox Guardian Auto-Resolve",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1776339600000,
       "schedule": {
         "kind": "cron",
@@ -226,7 +221,7 @@
       "id": "27a8905e-eafb-4167-b547-029e598117fc",
       "agentId": "google",
       "name": "Email Guardian — Important Alert",
-      "enabled": true,
+      "enabled": false,
       "createdAtMs": 1777670204760,
       "schedule": {
         "kind": "every",
