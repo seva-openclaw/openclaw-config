@@ -2,14 +2,14 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1779186795123,
+      "updatedAtMs": 1779273210796,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779273000000,
-        "lastRunAtMs": 1779186600011,
+        "nextRunAtMs": 1779359400000,
+        "lastRunAtMs": 1779273000010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 195112,
+        "lastDurationMs": 210786,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
@@ -17,32 +17,32 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1779174193490,
+      "updatedAtMs": 1779260532013,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1779260400000,
-        "lastRunAtMs": 1779174000010,
+        "nextRunAtMs": 1779346800000,
+        "lastRunAtMs": 1779260400010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 193480,
+        "lastDurationMs": 132003,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1779235326517,
+      "updatedAtMs": 1779256895918,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1779256826976,
-        "lastRunAtMs": 1779235227007,
+        "nextRunAtMs": 1779278426976,
+        "lastRunAtMs": 1779256826990,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 99510,
+        "lastDurationMs": 68928,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1779256826982
+        "runningAtMs": 1779278426981
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
