@@ -2,14 +2,14 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1779273210796,
+      "updatedAtMs": 1779359584063,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779359400000,
-        "lastRunAtMs": 1779273000010,
+        "nextRunAtMs": 1779445800000,
+        "lastRunAtMs": 1779359400008,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 210786,
+        "lastDurationMs": 184055,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
@@ -17,48 +17,47 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1779260532013,
+      "updatedAtMs": 1779346974251,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1779346800000,
-        "lastRunAtMs": 1779260400010,
+        "nextRunAtMs": 1779433200000,
+        "lastRunAtMs": 1779346800020,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 132003,
+        "lastDurationMs": 174231,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1779321744593,
+      "updatedAtMs": 1779343290953,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1779343226976,
-        "lastRunAtMs": 1779321626991,
+        "nextRunAtMs": 1779364826976,
+        "lastRunAtMs": 1779343226984,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 117602,
+        "lastDurationMs": 63969,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1779343226981
+        "runningAtMs": 1779364826983
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
-      "updatedAtMs": 1778756567339,
+      "updatedAtMs": 1779361575292,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 7 * * 4\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779361200000,
-        "lastRunAtMs": 1778756400015,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 167324,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
+        "nextRunAtMs": 1779966000000,
+        "lastRunAtMs": 1779361200019,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 375273,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, 5-hour usage limit reached for Token Plan Starter (0/0 used), resets at 2026-05-14T15:00:00Z (2056)",
-        "lastErrorReason": "rate_limit"
+        "lastDelivered": true
       }
     },
     "6cc4c9cf-614b-45d0-ba5a-2495abe1119b": {
@@ -134,16 +133,16 @@
       }
     },
     "5449097e-92e9-47bc-8514-3b6ba7660b7b": {
-      "updatedAtMs": 1779185063969,
+      "updatedAtMs": 1779357763341,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 */2 * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779357600000,
-        "lastRunAtMs": 1779184800017,
+        "nextRunAtMs": 1779530400000,
+        "lastRunAtMs": 1779357600028,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 263952,
+        "lastDurationMs": 163313,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 16,
+        "consecutiveErrors": 17,
         "consecutiveSkipped": 0,
         "lastError": "Error"
       }
