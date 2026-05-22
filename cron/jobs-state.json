@@ -31,18 +31,18 @@
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1779429695826,
+      "updatedAtMs": 1779451290468,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1779451226976,
-        "lastRunAtMs": 1779429626988,
+        "nextRunAtMs": 1779472826976,
+        "lastRunAtMs": 1779451226988,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 68838,
+        "lastDurationMs": 63480,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1779451226980
+        "runningAtMs": 1779472826981
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -61,14 +61,14 @@
       }
     },
     "6cc4c9cf-614b-45d0-ba5a-2495abe1119b": {
-      "updatedAtMs": 1778853856139,
+      "updatedAtMs": 1779458617569,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 10 * * 5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779458400000,
-        "lastRunAtMs": 1778853600019,
+        "nextRunAtMs": 1780063200000,
+        "lastRunAtMs": 1779458400011,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 256120,
+        "lastDurationMs": 217558,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
