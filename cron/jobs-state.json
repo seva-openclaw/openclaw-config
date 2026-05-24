@@ -17,32 +17,32 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1779519804649,
+      "updatedAtMs": 1779606200710,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1779606000000,
-        "lastRunAtMs": 1779519600690,
+        "nextRunAtMs": 1779692400000,
+        "lastRunAtMs": 1779606000010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 203959,
+        "lastDurationMs": 200700,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1779580910767,
+      "updatedAtMs": 1779624117202,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1779602426976,
-        "lastRunAtMs": 1779580827199,
+        "nextRunAtMs": 1779645626976,
+        "lastRunAtMs": 1779624026989,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 83568,
+        "lastDurationMs": 90213,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1779602426986
+        "runningAtMs": 1779645626982
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -104,19 +104,19 @@
       }
     },
     "3eddbd4d-2b74-401f-988c-4672614c5413": {
-      "updatedAtMs": 1779543171903,
+      "updatedAtMs": 1779629602570,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 9 * * 0,6\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779629400000,
-        "lastRunAtMs": 1779543000011,
+        "nextRunAtMs": 1780147800000,
+        "lastRunAtMs": 1779629400011,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "consecutiveErrors": 1,
-        "lastDurationMs": 171892,
+        "consecutiveErrors": 2,
+        "lastDurationMs": 202559,
         "lastDeliveryStatus": "unknown",
         "consecutiveSkipped": 0,
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, 5-hour usage limit reached for Token Plan Hs_plus (4500/4500 used), resets at 2026-05-23T15:00:00Z (2056)",
-        "lastErrorReason": "rate_limit"
+        "lastErrorReason": "rate_limit",
+        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Hs_plus (45000/45000 used), resets at 2026-05-25T00:00:00Z (2056)"
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
