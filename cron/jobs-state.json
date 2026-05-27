@@ -31,18 +31,18 @@
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1779775258101,
+      "updatedAtMs": 1779818521622,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1779796826976,
-        "lastRunAtMs": 1779775226983,
+        "nextRunAtMs": 1779840026976,
+        "lastRunAtMs": 1779818426999,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 31118,
+        "lastDurationMs": 94623,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1779796826979
+        "runningAtMs": 1779840026984
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
