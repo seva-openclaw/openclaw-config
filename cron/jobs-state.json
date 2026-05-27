@@ -2,14 +2,14 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1779791527793,
+      "updatedAtMs": 1779877983364,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779877800000,
-        "lastRunAtMs": 1779791400007,
+        "nextRunAtMs": 1779964200000,
+        "lastRunAtMs": 1779877800020,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 127786,
+        "lastDurationMs": 183344,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
@@ -17,32 +17,32 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1779778926539,
+      "updatedAtMs": 1779865327298,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1779865200000,
-        "lastRunAtMs": 1779778800010,
+        "nextRunAtMs": 1779951600000,
+        "lastRunAtMs": 1779865200017,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 126529,
+        "lastDurationMs": 127281,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1779840093568,
+      "updatedAtMs": 1779861659727,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1779861626976,
-        "lastRunAtMs": 1779840026996,
+        "nextRunAtMs": 1779883226976,
+        "lastRunAtMs": 1779861626988,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 66572,
+        "lastDurationMs": 32739,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1779861626983
+        "runningAtMs": 1779883226986
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -134,16 +134,16 @@
       }
     },
     "5449097e-92e9-47bc-8514-3b6ba7660b7b": {
-      "updatedAtMs": 1779703371190,
+      "updatedAtMs": 1779876193955,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 */2 * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1779876000000,
-        "lastRunAtMs": 1779703200021,
+        "nextRunAtMs": 1780048800000,
+        "lastRunAtMs": 1779876000321,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 171169,
+        "lastDurationMs": 193634,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 19,
+        "consecutiveErrors": 20,
         "consecutiveSkipped": 0,
         "lastError": "Error"
       }
