@@ -31,18 +31,18 @@
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1780120926291,
+      "updatedAtMs": 1780142525642,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1780142426976,
-        "lastRunAtMs": 1780120826983,
+        "nextRunAtMs": 1780164026976,
+        "lastRunAtMs": 1780142426991,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 99308,
+        "lastDurationMs": 98651,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1780142426985
+        "runningAtMs": 1780164026979
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -104,19 +104,18 @@
       }
     },
     "3eddbd4d-2b74-401f-988c-4672614c5413": {
-      "updatedAtMs": 1779629602570,
+      "updatedAtMs": 1780147945933,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 9 * * 0,6\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780147800000,
-        "lastRunAtMs": 1779629400011,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "consecutiveErrors": 2,
-        "lastDurationMs": 202559,
-        "lastDeliveryStatus": "unknown",
+        "nextRunAtMs": 1780234200000,
+        "lastRunAtMs": 1780147800019,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "consecutiveErrors": 0,
+        "lastDurationMs": 145914,
+        "lastDeliveryStatus": "delivered",
         "consecutiveSkipped": 0,
-        "lastErrorReason": "rate_limit",
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Hs_plus (45000/45000 used), resets at 2026-05-25T00:00:00Z (2056)"
+        "lastDelivered": true
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
