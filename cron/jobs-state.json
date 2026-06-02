@@ -2,14 +2,14 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1780309997228,
+      "updatedAtMs": 1780396393476,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780396200000,
-        "lastRunAtMs": 1780309800010,
+        "nextRunAtMs": 1780482600000,
+        "lastRunAtMs": 1780396200014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 197218,
+        "lastDurationMs": 193462,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
@@ -17,32 +17,35 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1780297296717,
+      "updatedAtMs": 1780383771335,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1780383600000,
-        "lastRunAtMs": 1780297200007,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 96710,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0,
-        "consecutiveSkipped": 0
+        "nextRunAtMs": 1780470000000,
+        "lastRunAtMs": 1780383600008,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 171327,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0,
+        "lastError": "cron: job interrupted by gateway restart",
+        "lastDelivered": false,
+        "lastDeliveryError": "cron: job interrupted by gateway restart"
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1780358506097,
+      "updatedAtMs": 1780380074874,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1780380026976,
-        "lastRunAtMs": 1780358427010,
+        "nextRunAtMs": 1780401626976,
+        "lastRunAtMs": 1780380026983,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 79087,
+        "lastDurationMs": 47891,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1780380026976
+        "runningAtMs": 1780401626979
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
