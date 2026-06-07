@@ -2,77 +2,80 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1780482737552,
+      "updatedAtMs": 1780655680537,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780569000000,
-        "lastRunAtMs": 1780482600007,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 137545,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
+        "nextRunAtMs": 1780914600000,
+        "lastRunAtMs": 1780655400010,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 280527,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
         "consecutiveSkipped": 0,
-        "lastDelivered": true
+        "lastErrorReason": "rate_limit",
+        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)"
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1780470080508,
+      "updatedAtMs": 1780815693174,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1780556400000,
-        "lastRunAtMs": 1780470000025,
+        "nextRunAtMs": 1780902000000,
+        "lastRunAtMs": 1780815600009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 80483,
+        "lastDurationMs": 93165,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1780531303407,
+      "updatedAtMs": 1780833716692,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1780552826976,
-        "lastRunAtMs": 1780531233881,
+        "nextRunAtMs": 1780855226976,
+        "lastRunAtMs": 1780833626983,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 69526,
+        "lastDurationMs": 89709,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1780552827051
+        "runningAtMs": 1780855226980
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
-      "updatedAtMs": 1779966221579,
+      "updatedAtMs": 1780570981630,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 7 * * 4\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780570800000,
-        "lastRunAtMs": 1779966000009,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 221570,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
+        "nextRunAtMs": 1781175600000,
+        "lastRunAtMs": 1780570801067,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 180563,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
         "consecutiveSkipped": 0,
-        "lastDelivered": true
+        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)",
+        "lastErrorReason": "rate_limit"
       }
     },
     "6cc4c9cf-614b-45d0-ba5a-2495abe1119b": {
-      "updatedAtMs": 1780063458621,
+      "updatedAtMs": 1780668198969,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 10 * * 5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780668000000,
-        "lastRunAtMs": 1780063200012,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 258609,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "consecutiveSkipped": 0
+        "nextRunAtMs": 1781272800000,
+        "lastRunAtMs": 1780668000071,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 198898,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "consecutiveSkipped": 0,
+        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)",
+        "lastErrorReason": "rate_limit"
       }
     },
     "0f8966e6-1465-483d-9254-8dc9c1f5093a": {
@@ -104,18 +107,19 @@
       }
     },
     "3eddbd4d-2b74-401f-988c-4672614c5413": {
-      "updatedAtMs": 1780234401480,
+      "updatedAtMs": 1780839212868,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 9 * * 0,6\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780752600000,
-        "lastRunAtMs": 1780234200013,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "consecutiveErrors": 0,
-        "lastDurationMs": 201467,
-        "lastDeliveryStatus": "delivered",
+        "nextRunAtMs": 1781357400000,
+        "lastRunAtMs": 1780839000013,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "consecutiveErrors": 2,
+        "lastDurationMs": 212855,
+        "lastDeliveryStatus": "unknown",
         "consecutiveSkipped": 0,
-        "lastDelivered": true
+        "lastErrorReason": "rate_limit",
+        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)"
       }
     },
     "efcd94f2-0d6f-453b-94ff-c777e2bd5bd7": {
@@ -133,18 +137,19 @@
       }
     },
     "5449097e-92e9-47bc-8514-3b6ba7660b7b": {
-      "updatedAtMs": 1780481005970,
+      "updatedAtMs": 1780826592533,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 */2 * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780653600000,
-        "lastRunAtMs": 1780480800014,
+        "nextRunAtMs": 1780999200000,
+        "lastRunAtMs": 1780826400012,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 205956,
+        "lastDurationMs": 192521,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 24,
+        "consecutiveErrors": 26,
         "consecutiveSkipped": 0,
-        "lastError": "Error"
+        "lastErrorReason": "rate_limit",
+        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)"
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
