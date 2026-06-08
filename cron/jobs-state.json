@@ -2,48 +2,47 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1780655680537,
+      "updatedAtMs": 1780914763463,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780914600000,
-        "lastRunAtMs": 1780655400010,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 280527,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
+        "nextRunAtMs": 1781001000000,
+        "lastRunAtMs": 1780914600008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 163455,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "lastErrorReason": "rate_limit",
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)"
+        "lastDelivered": true
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1780815693174,
+      "updatedAtMs": 1780902085653,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1780902000000,
-        "lastRunAtMs": 1780815600009,
+        "nextRunAtMs": 1780988400000,
+        "lastRunAtMs": 1780902000030,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 93165,
+        "lastDurationMs": 85623,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1780876874625,
+      "updatedAtMs": 1780898457011,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1780898426976,
-        "lastRunAtMs": 1780876827204,
+        "nextRunAtMs": 1780920026976,
+        "lastRunAtMs": 1780898426984,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 47421,
+        "lastDurationMs": 30027,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1780898426980
+        "runningAtMs": 1780920026979
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
