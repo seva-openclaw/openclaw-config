@@ -2,14 +2,14 @@
   "version": 1,
   "jobs": {
     "420a1829-7af7-4992-af5d-e4e134c52642": {
-      "updatedAtMs": 1780914763463,
+      "updatedAtMs": 1781001207599,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"30 6 * * 1-5\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1781001000000,
-        "lastRunAtMs": 1780914600008,
+        "nextRunAtMs": 1781087400000,
+        "lastRunAtMs": 1781001000005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 163455,
+        "lastDurationMs": 207594,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
@@ -17,32 +17,32 @@
       }
     },
     "48480f68-3eca-43ae-9739-d17b7a456f25": {
-      "updatedAtMs": 1780902085653,
+      "updatedAtMs": 1780988487283,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 3 * * *\"}}",
       "state": {
-        "nextRunAtMs": 1780988400000,
-        "lastRunAtMs": 1780902000030,
+        "nextRunAtMs": 1781074800000,
+        "lastRunAtMs": 1780988400935,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 85623,
+        "lastDurationMs": 86348,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0
       }
     },
     "openclaw-git-sync": {
-      "updatedAtMs": 1780963285684,
+      "updatedAtMs": 1780984867221,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 */6 * * *\",\"tz\":\"UTC\",\"staggerMs\":300000}}",
       "state": {
-        "nextRunAtMs": 1780984826976,
-        "lastRunAtMs": 1780963227396,
+        "nextRunAtMs": 1781006426976,
+        "lastRunAtMs": 1780984826984,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 58288,
+        "lastDurationMs": 40237,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
         "consecutiveSkipped": 0,
-        "runningAtMs": 1780984826980
+        "runningAtMs": 1781006427101
       }
     },
     "0ecd7690-6592-48c9-8dcc-c170f332c209": {
@@ -136,19 +136,18 @@
       }
     },
     "5449097e-92e9-47bc-8514-3b6ba7660b7b": {
-      "updatedAtMs": 1780826592533,
+      "updatedAtMs": 1780999546346,
       "scheduleIdentity": "{\"version\":1,\"enabled\":true,\"schedule\":{\"kind\":\"cron\",\"expr\":\"0 6 */2 * *\",\"tz\":\"America/New_York\"}}",
       "state": {
-        "nextRunAtMs": 1780999200000,
-        "lastRunAtMs": 1780826400012,
+        "nextRunAtMs": 1781172000000,
+        "lastRunAtMs": 1780999200331,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 192521,
+        "lastDurationMs": 346015,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 26,
+        "consecutiveErrors": 27,
         "consecutiveSkipped": 0,
-        "lastErrorReason": "rate_limit",
-        "lastError": "FailoverError: ⚠️ usage limit exceeded, weekly usage limit reached for Token Plan Max (300000000/300000000 used), resets at 2026-06-08T00:00:00Z (2056)"
+        "lastError": "Error"
       }
     },
     "27a8905e-eafb-4167-b547-029e598117fc": {
